@@ -27,7 +27,14 @@
     color: #fff;
   }
   [tuiAppearance][data-appearance='secondary'],
-  [tuiAppearance][data-appearance='flat'],
+  [tuiAppearance][data-appearance='flat']:not([data-mode]):is(
+      a,
+      button,
+      select,
+      textarea,
+      input,
+      label
+    ):not([data-state]),
   [tuiAppearance][data-appearance='destructive'] {
     color: var(--primary);
   }
