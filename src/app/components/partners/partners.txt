@@ -1,0 +1,80 @@
+<div class="partner__block">
+  <h1 class="under-title">Наши партнеры</h1>
+  <div class="partner-card__block">
+    <div class="partner-card" *ngFor="let item of items">
+      <img src="{{ item.imgUrl }}" class="partner-card__img" />
+      <h1 class="partner-card__title">{{ item.name }}</h1>
+      <p class="partner-card__description">{{ item.description }}</p>
+    </div>
+  </div>
+</div>
+
+
+.partner__block {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.partner-card__block {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.partner-card {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  gap: 20px;
+  background-color: var(--primary);
+  box-sizing: border-box;
+}
+.partner-card__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+.partner-card__img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  max-width: 180px;
+  max-height: 180px;
+}
+.partner-card__description {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+:host {
+  display: block;
+}
+
+.pagination {
+  margin: 1rem auto 0;
+}
+
+.item {
+  padding: 1rem;
+  border: 1px solid var(--tui-border-normal);
+  border-radius: 1rem;
+}
+
+.title {
+  margin: 0 0 1rem;
+}
+
+@media screen and (max-width: 760px) {
+  .partner-card__block {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

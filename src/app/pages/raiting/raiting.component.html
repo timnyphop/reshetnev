@@ -1,0 +1,57 @@
+<h1 class="title">
+  Оригинал атттеста нужно принести до 15 августа! Иначе абитурент не будет
+  рассматриваться к зачислению
+</h1>
+<div class="column__primer">
+  <div class="primer__block">
+    <div class="color-primer"></div>
+    <p class="primer-text">- Оригинал аттестата, рекомендован к зачеслению</p>
+  </div>
+  <div class="primer__block">
+    <div class="color-primer1"></div>
+    <p class="primer-text">
+      - Не оригинал аттестата, не рекомендован к зачеслению
+    </p>
+  </div>
+</div>
+<h1 class="title">
+  Техналогия машиностроение, очная форма, 9 классов, 3 года 10 месяцев
+</h1>
+
+<table border="1">
+  <thead>
+    <tr class="tui-table__title">
+      <th>Место</th>
+      <th>Средний балл</th>
+      <th>ФИО</th>
+      <th>Дата подачи</th>
+      <th>СВО</th>
+      <th>Аттестат</th>
+      <th>Высший приоритет</th>
+      <th>Особые условия</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      [ngClass]="item.original ? 'original' : 'back'"
+      *ngFor="let item of students; let i = index"
+    >
+      <td class="text__td">{{ i + 1 }}</td>
+      <td class="text__td">{{ item.ball }}</td>
+      <td class="text__td">{{ item.name }}</td>
+      <td class="text__td">{{ item.date }}</td>
+      <td class="text__td">
+        <span [ngClass]="item.svo === 'Да' ? 'span-svo' : ''">{{
+          item.svo
+        }}</span>
+      </td>
+      <td class="text__td">{{ item.original ? 'Да' : 'Нет' }}</td>
+      <td class="text__td">
+        {{ item.svo }}
+      </td>
+      <td class="text__td">
+        {{ item.svo }}
+      </td>
+    </tr>
+  </tbody>
+</table>

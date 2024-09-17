@@ -1,0 +1,24 @@
+.map__card {
+  border: 2px solid lightgray;
+  border-radius: 20px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.map__header {
+  display: flex;
+  justify-content: center;
+}
+.map__title {
+  font-size: 34px;
+  font-weight: 600;
+  color: #000;
+  line-height: 34px;
+  text-align: center;
+}
+.map {
+  border-radius: 20px;
+}

@@ -1,0 +1,50 @@
+.footer {
+  border-top: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+.footer-column-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.link {
+  font-size: 18px;
+  color: var(--primary);
+  font-weight: 500;
+}
+.footer-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+.contact-text-block {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.contact-icon {
+  width: 15px;
+  height: 15px;
+  color: var(--primary);
+}
+.contact-text {
+  font-size: 15px;
+  color: var(--primary);
+}
+@media screen and (max-width: 760px) {
+  .footer-title {
+    font-size: 18px;
+  }
+  .contact-text {
+    font-size: 16px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 40px;
+  }
+}

@@ -1,0 +1,355 @@
+import {
+  TUI_IS_IOS,
+  WA_ANIMATION_FRAME,
+  WA_WINDOW,
+  coerceBooleanProperty,
+  takeUntilDestroyed,
+  tuiBlurNativeFocused,
+  tuiContainsOrAfter,
+  tuiCreateToken,
+  tuiGetClosestFocusable,
+  tuiGetNativeFocused,
+  tuiInjectElement,
+  tuiIsHTMLElement,
+  tuiIsPresent,
+  tuiProvideOptions,
+  tuiPx,
+  tuiZonefreeScheduler
+} from "./chunk-IDV3SLH5.js";
+import {
+  DOCUMENT
+} from "./chunk-ET6A4XZJ.js";
+import {
+  DestroyRef,
+  Directive,
+  ElementRef,
+  InjectionToken,
+  Input,
+  NgZone,
+  Renderer2,
+  inject,
+  setClassMetadata,
+  ɵɵInputTransformsFeature,
+  ɵɵProvidersFeature,
+  ɵɵdefineDirective,
+  ɵɵlistener,
+  ɵɵresolveWindow
+} from "./chunk-TMZGPDKF.js";
+import {
+  map,
+  race,
+  skipWhile,
+  take,
+  throttleTime,
+  timer
+} from "./chunk-NUC4GERA.js";
+
+// node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-directives-auto-focus.mjs
+var AbstractTuiAutofocusHandler = class {
+  constructor(el) {
+    this.el = el;
+  }
+  get element() {
+    const el = this.el.nativeElement.tagName.includes("-") ? this.el.nativeElement.querySelector("input,textarea") : this.el.nativeElement;
+    return el || this.el.nativeElement;
+  }
+  get isTextFieldElement() {
+    return this.element.matches("input, textarea, [contenteditable]");
+  }
+};
+var TIMEOUT = 1e3;
+var NG_ANIMATION_SELECTOR = ".ng-animating";
+var TuiDefaultAutofocusHandler = class extends AbstractTuiAutofocusHandler {
+  constructor(el, animationFrame$, zone) {
+    super(el);
+    this.animationFrame$ = animationFrame$;
+    this.zone = zone;
+  }
+  setFocus() {
+    if (this.isTextFieldElement) {
+      race(timer(TIMEOUT), this.animationFrame$.pipe(throttleTime(100, tuiZonefreeScheduler(this.zone)), map(() => this.element.closest(NG_ANIMATION_SELECTOR)), skipWhile(Boolean), take(1))).subscribe(() => this.element.focus({
+        preventScroll: true
+      }));
+    } else {
+      this.element.focus({
+        preventScroll: true
+      });
+    }
+  }
+};
+var TEXTFIELD_ATTRS = ["type", "inputMode", "autocomplete", "accept", "min", "max", "step", "pattern", "size", "maxlength"];
+var TuiIosAutofocusHandler = class extends AbstractTuiAutofocusHandler {
+  constructor(el, renderer, zone, win) {
+    super(el);
+    this.renderer = renderer;
+    this.zone = zone;
+    this.win = win;
+    this.patchCssStyles();
+  }
+  setFocus() {
+    if (this.isTextFieldElement) {
+      this.zone.runOutsideAngular(() => this.iosWebkitAutofocus());
+    } else {
+      this.element.focus({
+        preventScroll: true
+      });
+    }
+  }
+  iosWebkitAutofocus() {
+    const fakeInput = this.makeFakeInput();
+    const duration = this.getDurationTimeBeforeFocus();
+    let fakeFocusTimeoutId = 0;
+    let elementFocusTimeoutId = 0;
+    const blurHandler = () => fakeInput.focus({
+      preventScroll: true
+    });
+    const focusHandler = () => {
+      clearTimeout(fakeFocusTimeoutId);
+      fakeFocusTimeoutId = this.win.setTimeout(() => {
+        clearTimeout(elementFocusTimeoutId);
+        fakeInput.removeEventListener("blur", blurHandler);
+        fakeInput.removeEventListener("focus", focusHandler);
+        elementFocusTimeoutId = this.win.setTimeout(() => {
+          this.element.focus({
+            preventScroll: false
+          });
+          fakeInput.remove();
+        }, duration);
+      });
+    };
+    fakeInput.addEventListener("blur", blurHandler, {
+      once: true
+    });
+    fakeInput.addEventListener("focus", focusHandler);
+    if (this.insideDialog()) {
+      this.win.document.body.appendChild(fakeInput);
+    } else {
+      this.element.parentElement?.appendChild(fakeInput);
+    }
+    fakeInput.focus({
+      preventScroll: true
+    });
+  }
+  /**
+   * @note:
+   * emulate textfield position in layout with cursor
+   * before focus to real textfield element
+   *
+   * required note:
+   * [fakeInput.readOnly = true] ~
+   * don't use {readOnly: true} value, it's doesn't work for emulate autofill
+   *
+   * [fakeInput.style.opacity = 0] ~
+   * don't use {opacity: 0}, sometimes it's doesn't work for emulate real input
+   *
+   * [fakeInput.style.fontSize = 16px] ~
+   * disable possible auto zoom
+   *
+   * [fakeInput.style.top/left] ~
+   * emulate position cursor before focus to real textfield element
+   */
+  makeFakeInput() {
+    const fakeInput = this.renderer.createElement("input");
+    const rect = this.element.getBoundingClientRect();
+    this.patchFakeInputFromFocusableElement(fakeInput);
+    fakeInput.style.height = tuiPx(rect.height);
+    fakeInput.style.width = tuiPx(rect.width / 2);
+    fakeInput.style.position = "fixed";
+    fakeInput.style.zIndex = "-99999999";
+    fakeInput.style.caretColor = "transparent";
+    fakeInput.style.border = "none";
+    fakeInput.style.outline = "none";
+    fakeInput.style.color = "transparent";
+    fakeInput.style.background = "transparent";
+    fakeInput.style.cursor = "none";
+    fakeInput.style.fontSize = tuiPx(16);
+    fakeInput.style.top = tuiPx(rect.top);
+    fakeInput.style.left = tuiPx(rect.left);
+    return fakeInput;
+  }
+  getDurationTimeBeforeFocus() {
+    return parseFloat(this.win.getComputedStyle(this.element).getPropertyValue("--tui-duration")) || 0;
+  }
+  /**
+   * @note:
+   * unfortunately, in older versions of iOS
+   * there is a bug that the fake input cursor
+   * will move along with the dialog animation
+   * and then that dialog will be shaking
+   */
+  insideDialog() {
+    return !!this.element.closest("tui-dialog");
+  }
+  /**
+   * @note:
+   * This is necessary so that the viewport isn't recalculated
+   * and then the dialogs don't shake.
+   *
+   * Also, we need to fixed height viewport,
+   * so that when focusing the dialogs don't shake
+   */
+  patchCssStyles() {
+    [this.win.document.documentElement, this.win.document.body].forEach((element) => {
+      element.style.setProperty("overflow", "auto");
+      element.style.setProperty("height", "100%");
+    });
+  }
+  /**
+   * @note:
+   * inherit basic attributes values from real input
+   * for help iOS detect what do you want see on keyboard,
+   * for example [inputMode=numeric, autocomplete=cc-number]
+   */
+  patchFakeInputFromFocusableElement(fakeInput) {
+    TEXTFIELD_ATTRS.forEach((attr) => {
+      const value = this.element.getAttribute(attr);
+      if (tuiIsPresent(value)) {
+        fakeInput.setAttribute(attr, value);
+      }
+    });
+  }
+};
+var TUI_AUTOFOCUS_DEFAULT_OPTIONS = {
+  delay: NaN
+  // NaN = no delay/sync
+};
+var TUI_AUTOFOCUS_OPTIONS = tuiCreateToken(TUI_AUTOFOCUS_DEFAULT_OPTIONS);
+function tuiAutoFocusOptionsProvider(options) {
+  return tuiProvideOptions(TUI_AUTOFOCUS_OPTIONS, options, TUI_AUTOFOCUS_DEFAULT_OPTIONS);
+}
+var TUI_AUTOFOCUS_HANDLER = new InjectionToken("[TUI_AUTOFOCUS_HANDLER]");
+var TUI_AUTOFOCUS_PROVIDERS = [{
+  provide: TUI_AUTOFOCUS_HANDLER,
+  useFactory: (el, animationFrame$, renderer, zone, win, isIos) => isIos ? new TuiIosAutofocusHandler(el, renderer, zone, win) : new TuiDefaultAutofocusHandler(el, animationFrame$, zone),
+  deps: [ElementRef, WA_ANIMATION_FRAME, Renderer2, NgZone, WA_WINDOW, TUI_IS_IOS]
+}];
+var _TuiAutoFocus = class _TuiAutoFocus {
+  constructor() {
+    this.handler = inject(TUI_AUTOFOCUS_HANDLER);
+    this.options = inject(TUI_AUTOFOCUS_OPTIONS);
+    this.destroyRef = inject(DestroyRef);
+  }
+  ngAfterViewInit() {
+    if (this.autoFocus) {
+      this.focus();
+    }
+  }
+  focus() {
+    if (Number.isNaN(this.options.delay)) {
+      void Promise.resolve().then(() => this.handler.setFocus());
+    } else {
+      timer(this.options.delay).pipe(takeUntilDestroyed(this.destroyRef)).subscribe(() => this.handler.setFocus());
+    }
+  }
+};
+_TuiAutoFocus.ɵfac = function TuiAutoFocus_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _TuiAutoFocus)();
+};
+_TuiAutoFocus.ɵdir = ɵɵdefineDirective({
+  type: _TuiAutoFocus,
+  selectors: [["", "tuiAutoFocus", ""]],
+  inputs: {
+    autoFocus: [2, "tuiAutoFocus", "autoFocus", coerceBooleanProperty]
+  },
+  standalone: true,
+  features: [ɵɵProvidersFeature(TUI_AUTOFOCUS_PROVIDERS), ɵɵInputTransformsFeature]
+});
+var TuiAutoFocus = _TuiAutoFocus;
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TuiAutoFocus, [{
+    type: Directive,
+    args: [{
+      standalone: true,
+      selector: "[tuiAutoFocus]",
+      providers: TUI_AUTOFOCUS_PROVIDERS
+    }]
+  }], null, {
+    autoFocus: [{
+      type: Input,
+      args: [{
+        alias: "tuiAutoFocus",
+        transform: coerceBooleanProperty
+      }]
+    }]
+  });
+})();
+var TuiSynchronousAutofocusHandler = class extends AbstractTuiAutofocusHandler {
+  setFocus() {
+    this.element.focus({
+      preventScroll: true
+    });
+  }
+};
+
+// node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-directives-focus-trap.mjs
+var _TuiFocusTrap = class _TuiFocusTrap {
+  constructor() {
+    this.doc = inject(DOCUMENT);
+    this.el = tuiInjectElement();
+    this.activeElement = tuiGetNativeFocused(this.doc);
+    void Promise.resolve().then(() => this.el.focus());
+  }
+  ngOnDestroy() {
+    tuiBlurNativeFocused(this.doc);
+    Promise.resolve().then(() => {
+      if (tuiIsHTMLElement(this.activeElement)) {
+        this.activeElement.focus();
+      }
+    });
+  }
+  onFocusIn(node) {
+    if (!tuiContainsOrAfter(this.el, node)) {
+      tuiGetClosestFocusable({
+        initial: this.el,
+        root: this.el
+      })?.focus();
+    }
+  }
+};
+_TuiFocusTrap.ɵfac = function TuiFocusTrap_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _TuiFocusTrap)();
+};
+_TuiFocusTrap.ɵdir = ɵɵdefineDirective({
+  type: _TuiFocusTrap,
+  selectors: [["", "tuiFocusTrap", ""]],
+  hostAttrs: ["tabIndex", "0"],
+  hostBindings: function TuiFocusTrap_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("focusin.silent", function TuiFocusTrap_focusin_silent_HostBindingHandler($event) {
+        return ctx.onFocusIn($event.target);
+      }, false, ɵɵresolveWindow);
+    }
+  },
+  standalone: true
+});
+var TuiFocusTrap = _TuiFocusTrap;
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TuiFocusTrap, [{
+    type: Directive,
+    args: [{
+      standalone: true,
+      selector: "[tuiFocusTrap]",
+      host: {
+        tabIndex: "0",
+        "(window:focusin.silent)": "onFocusIn($event.target)"
+      }
+    }]
+  }], function() {
+    return [];
+  }, null);
+})();
+
+export {
+  AbstractTuiAutofocusHandler,
+  TuiDefaultAutofocusHandler,
+  TuiIosAutofocusHandler,
+  TUI_AUTOFOCUS_DEFAULT_OPTIONS,
+  TUI_AUTOFOCUS_OPTIONS,
+  tuiAutoFocusOptionsProvider,
+  TUI_AUTOFOCUS_HANDLER,
+  TUI_AUTOFOCUS_PROVIDERS,
+  TuiAutoFocus,
+  TuiSynchronousAutofocusHandler,
+  TuiFocusTrap
+};
+//# sourceMappingURL=chunk-7C2SET26.js.map

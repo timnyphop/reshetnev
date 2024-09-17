@@ -1,0 +1,142 @@
+//desktop
+.partner__block {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  cursor: default;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border-top: 1px solid lightgray;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.partner-card__block {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.partner-card {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  gap: 20px;
+  background-color: var(--primary);
+  box-sizing: border-box;
+}
+
+.partner-card__title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #fff;
+  margin: 0 auto;
+  line-height: 28px;
+  text-decoration: underline 1px solid #fff;
+  text-underline-offset: 3px;
+}
+
+.partner-card__img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  width: 200px;
+  height: 150px;
+}
+.partner-card__description {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+:host {
+  display: block;
+}
+
+.pagination {
+  margin: 1rem auto 0;
+}
+
+.item {
+  padding: 1rem;
+  border: 1px solid var(--tui-border-normal);
+  border-radius: 1rem;
+}
+
+.title {
+  margin: 0 0 1rem;
+}
+
+//mobile
+.partner__block-mobile {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 20px; /* Здесь задаем gap между заголовком и каруселью */
+  display: none;
+  border-radius: 20px;
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+
+  padding: 10px 0;
+}
+
+.carousel__block-mobile {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px 20px;
+  cursor: default;
+  gap: 10px;
+}
+
+.carousel {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: var(--primary);
+}
+
+.partner-card__img {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 200px;
+  max-height: 200px;
+  box-sizing: border-box;
+}
+
+.partners-card__description {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 auto;
+  line-height: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+  .partner__block {
+    display: none;
+  }
+  .partner__block-mobile {
+    display: flex;
+  }
+}

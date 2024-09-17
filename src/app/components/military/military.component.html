@@ -1,0 +1,15 @@
+<h1 class="under-title">Военная подготовка</h1>
+<tui-carousel [duration]="duration" [(index)]="index" class="carousel">
+  <ng-container *ngFor="let item of items">
+    <div *tuiItem>
+      <img src="{{ item }}" class="military__img" />
+      <!-- TODO: update documentation here -->
+    </div>
+  </ng-container>
+</tui-carousel>
+<tui-pagination
+  size="s"
+  class="pagination"
+  [length]="items.length"
+  [(index)]="index"
+/>

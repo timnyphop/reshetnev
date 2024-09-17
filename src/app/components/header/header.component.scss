@@ -1,0 +1,87 @@
+.header {
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  padding: 20px 20px;
+  align-items: center;
+}
+.header__title {
+  font-size: 24px;
+  font-weight: 800;
+}
+.left__block {
+  display: flex;
+  gap: 20px;
+}
+.header__button-link {
+  text-decoration: underline solid 2px lightgrey;
+  text-underline-offset: 3px;
+}
+.button {
+  background-color: #056c7d;
+}
+.button__modal:hover {
+  background-color: var(--primary);
+}
+.modal__close {
+  font-size: 24px;
+  font-weight: 800;
+  color: black;
+  cursor: default;
+  line-height: 29px;
+}
+.dropdown {
+  font-size: 16px;
+  line-height: 1.25rem;
+  letter-spacing: 0.075em;
+  padding: 20px 10px;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 200px;
+}
+.header__img-logo {
+  display: flex;
+  width: 300px;
+  height: auto;
+}
+.dropdown-link__block {
+  flex-direction: column;
+}
+.button-adaptive:hover {
+  background-color: #056c7d;
+}
+.dropdown-modal__block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dropwont-close__block {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.link {
+  color: var(--primary);
+}
+.button__modal {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .button {
+    display: none;
+  }
+  .button__modal {
+    display: block;
+  }
+  .header {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

@@ -1,0 +1,42 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="auth__block">
+    <h1 class="title__text">Login</h1>
+
+    <!-- Поле Email -->
+    <div class="input__group">
+      <tui-input class="input" formControlName="email"> Email </tui-input>
+      <div
+        *ngIf="form.get('email')?.touched && form.get('email')?.invalid"
+        class="error__message"
+      >
+        {{ getErrorMessage('email') }}
+      </div>
+    </div>
+
+    <!-- Поле Password -->
+    <div class="input__group">
+      <tui-input
+        class="input"
+        formControlName="password"
+        (focusedChange)="checked = !checked"
+      >
+        Password
+      </tui-input>
+      <div
+        *ngIf="form.get('password')?.touched && form.get('password')?.invalid"
+        class="error__message"
+      >
+        {{ getErrorMessage('password') }}
+      </div>
+    </div>
+
+    <!-- Сообщение об ошибке на уровне формы -->
+    <div class="button__group">
+      <button tuiButton type="submit" class="button">Login</button>
+
+      <button tuiButton type="button" class="button">
+        Don't have an account?
+      </button>
+    </div>
+  </div>
+</form>

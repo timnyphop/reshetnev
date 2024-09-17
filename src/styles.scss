@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #056c7d;
+  --second: #00c8ff;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --tui-font-text: 'Open Sans';
+  --tui-font-text-m: bold 1rem/1.5rem var(--tui-font-text);
+  --tui-font-text-s: normal 0.5rem/1.25rem var(--tui-font-text);
+  --tui-background-accent-1: var(--primary);
+  --tui-background-accent-1-pressed: var(--primary);
+  --tui-text-primary-on-accent-1: #fff;
+  --tui-text-primary-on-accent-2: #fff;
+  [tuiAppearance][data-appearance='link'] {
+    color: var(--primary);
+  }
+  //настройка цветов в слайдере
+  [tuiAppearance][data-appearance='link']:hover {
+    color: #fff;
+  }
+  [tuiAppearance][data-appearance='secondary'],
+  [tuiAppearance][data-appearance='flat'],
+  [tuiAppearance][data-appearance='destructive'] {
+    color: var(--primary);
+  }
+  @media (hover: hover) {
+    [tuiAppearance][data-appearance='primary']:-webkit-any(
+        a,
+        button,
+        select,
+        textarea,
+        input,
+        label
+      ):hover:not(:disabled):not([data-state]) {
+      /* --t-bg: var(--tui-background-accent-1-hover); */
+      background-color: var(--primary);
+    }
+  }
+}
+.under-title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: center;
+  text-decoration: underline 1px solid lightgray;
+  text-underline-offset: 6px;
+}

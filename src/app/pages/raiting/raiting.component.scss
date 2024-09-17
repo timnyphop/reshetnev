@@ -1,0 +1,98 @@
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  padding: 10px 0;
+  box-sizing: border-box;
+  line-height: 26px;
+}
+.column__primer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.primer__block {
+  display: flex;
+  gap: 10px;
+}
+.color-primer1 {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  background-color: #e0e0e0;
+}
+.primer-text {
+  font-size: 16px;
+
+  font-weight: 600;
+}
+.color-primer {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(67, 187, 67, 0.5);
+  align-items: center;
+}
+.original {
+  background-color: rgba(67, 187, 67, 0.5);
+}
+
+/* Стили для таблицы */
+table {
+  width: 100%;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/* Стили для заголовков таблицы */
+thead {
+  background-color: var(--primary); /* Цвет фона заголовков */
+}
+
+th {
+  font-size: 16px;
+  border: 1px solid white;
+  padding: 15px 10px;
+  text-align: left; /* Выравнивание текста влево */
+}
+
+/* Стили для строк таблицы */
+tbody td {
+  padding: 10px; /* Внутренние отступы для ячеек */
+  color: black;
+  font-weight: 600;
+}
+
+td {
+  border: 1px solid white;
+}
+
+/* Стиль для неоригинальных строк */
+.back {
+  background-color: #e0e0e0; /* Серый фон для неоригинальных строк */
+}
+
+.text__td {
+  font-size: 14px;
+  font-weight: 500;
+}
+.span-svo {
+  font-weight: 900;
+}
+/* Адаптивные стили для экранов меньше 760px */
+@media screen and (max-width: 760px) {
+  th {
+    padding: 0px 2px;
+    font-size: 4px;
+    line-height: 10px;
+  }
+
+  tbody td {
+    border: 0.5px solid white;
+    padding: 2px 2px;
+    font-size: 5px;
+    line-height: 5px;
+  }
+}

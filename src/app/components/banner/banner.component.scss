@@ -1,0 +1,113 @@
+.banner__block {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  gap: 20px;
+  align-items: stretch;
+}
+.banner-text__block {
+  width: 100%;
+  min-width: 600px;
+  max-width: 600px;
+  height: auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.banner__title {
+  width: 100%;
+  max-width: 600px;
+  line-height: 48px;
+  font-size: 48px;
+  font-weight: 600;
+}
+.banner__text {
+  width: 100%;
+  max-width: 600px;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.banner__text-under-block {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 20px;
+}
+.banner-bold__text {
+  font-weight: 700;
+}
+.banner__text-under {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.banner__card-block {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.banner__card {
+  width: calc(100% / 2 - 20px);
+  height: auto;
+  text-align: center;
+  border: 1px solid var(--primary);
+  border-radius: 15px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: default;
+}
+.banner__card-title {
+  font-size: 24px;
+  color: var(--primary);
+  font-weight: 700;
+}
+.banner__img {
+  width: calc(100% / 2 - 10px);
+  height: auto;
+  max-height: 220px;
+  border-radius: 20px;
+  max-height: 251px;
+}
+
+.banner__img-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  height: auto;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 760px) {
+  .banner__card {
+    width: 100%;
+  }
+  .banner__img-block {
+    flex-direction: column;
+  }
+  .banner__img {
+    width: 100%;
+  }
+  .banner__block {
+    flex-direction: column;
+  }
+  .banner-text__block {
+    min-width: 100%;
+  }
+}
