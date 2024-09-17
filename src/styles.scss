@@ -19,45 +19,6 @@
   padding: 0;
 }
 
-[tuiAppearance][data-appearance='link'] {
-  color: var(--primary);
-}
-
-// Настройка цветов в слайдере
-[tuiAppearance][data-appearance='link']:hover {
-  color: #fff;
-}
-
-[tuiAppearance][data-appearance='secondary'],
-[tuiAppearance][data-appearance='flat']:not([data-mode]):is(
-    a,
-    button,
-    select,
-    textarea,
-    input,
-    label
-  ):not([data-state]) {
-  background-color: var(--second); /* Пример стиля для "flat" */
-  color: var(--primary); /* Цвет текста */
-}
-
-[tuiAppearance][data-appearance='destructive'] {
-  color: var(--primary);
-}
-
-@media (hover: hover) {
-  [tuiAppearance][data-appearance='primary']:is(
-      a,
-      button,
-      select,
-      textarea,
-      input,
-      label
-    ):hover:not(:disabled):not([data-state]) {
-    background-color: var(--primary);
-  }
-}
-
 .under-title {
   font-size: 34px;
   font-weight: 700;
