@@ -12,8 +12,7 @@ export class AbiturientsService {
 
   getAllAbiturients() {
     return (this.abiturients$ = this.http.get<IAbiturient[]>(
-      'http://localhost:3000/api/abiturients',
+      'http://192.168.31.106:3000/api/abiturients',
     ));
-    console.log(this.abiturients$);
   }
 }
