@@ -17,7 +17,7 @@ import {
   TuiNotification,
   TuiTitle,
   tuiNotificationOptionsProvider
-} from "./chunk-M6KD7FRP.js";
+} from "./chunk-2GPZGKBV.js";
 import {
   TuiNumberFormat
 } from "./chunk-CSGAM6CK.js";
@@ -60,7 +60,7 @@ import {
   tuiGroupOptionsProvider,
   tuiHintOptionsProvider,
   tuiTextfieldOptionsProvider
-} from "./chunk-L5MY3VUA.js";
+} from "./chunk-DQXC6UUQ.js";
 import {
   TUI_DIALOGS,
   TUI_DIALOGS_CLOSE,

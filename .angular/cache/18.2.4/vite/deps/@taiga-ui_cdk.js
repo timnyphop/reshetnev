@@ -7,17 +7,11 @@ import {
   TuiZoomService
 } from "./chunk-ERZALCDB.js";
 import {
-  TuiElement
-} from "./chunk-WWSZG6KZ.js";
-import {
-  TuiPlatform
-} from "./chunk-37TO3M7E.js";
-import {
-  TuiNativeValidator
-} from "./chunk-K24WDF5I.js";
-import {
   TuiItem
 } from "./chunk-WUH4W33G.js";
+import {
+  TuiElement
+} from "./chunk-WWSZG6KZ.js";
 import {
   TuiClickOutside
 } from "./chunk-K7PEND7W.js";
@@ -26,6 +20,12 @@ import {
   TuiSwipe,
   TuiSwipeService
 } from "./chunk-SW5ZISKD.js";
+import {
+  TuiPlatform
+} from "./chunk-37TO3M7E.js";
+import {
+  TuiNativeValidator
+} from "./chunk-K24WDF5I.js";
 import {
   AbstractTuiAutofocusHandler,
   TUI_AUTOFOCUS_DEFAULT_OPTIONS,

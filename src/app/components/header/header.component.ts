@@ -17,6 +17,7 @@ import {
 import { TuiAccordion, TuiChevron } from '@taiga-ui/kit';
 import { filter } from 'rxjs';
 import { TuiSidebar } from '@taiga-ui/addon-mobile';
+import { TestHttpComponent } from '../test-http/test-http.component';
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -34,6 +35,7 @@ import { TuiSidebar } from '@taiga-ui/addon-mobile';
     TuiSidebar,
     TuiIcon,
     TuiIconPipe,
+    TestHttpComponent,
   ],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],

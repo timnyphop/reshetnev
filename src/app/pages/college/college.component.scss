@@ -1,0 +1,28 @@
+.college-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+}
+.college-title {
+  width: auto;
+  height: auto;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  border-radius: 20px;
+  border-bottom: 1px solid lightgray;
+  padding: 15px 5px;
+  line-height: 36px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.college-card__block {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  background-color: blue;
+}

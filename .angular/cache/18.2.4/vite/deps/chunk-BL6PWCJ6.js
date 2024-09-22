@@ -6,6 +6,9 @@ import {
   maskitoUpdateElement
 } from "./chunk-QON5FFVA.js";
 import {
+  TuiElement
+} from "./chunk-WWSZG6KZ.js";
+import {
   TUI_ICON_END,
   TuiAppearance,
   TuiCalendarYear,
@@ -24,9 +27,6 @@ import {
   tuiInjectDataListSize,
   tuiInjectIconResolver
 } from "./chunk-Q7UIJALW.js";
-import {
-  TuiElement
-} from "./chunk-WWSZG6KZ.js";
 import {
   TuiNativeValidator
 } from "./chunk-K24WDF5I.js";
@@ -3638,4 +3638,4 @@ export {
   TuiRange,
   TuiStringifyContentPipe
 };
-//# sourceMappingURL=chunk-NI7V74ZJ.js.map
+//# sourceMappingURL=chunk-BL6PWCJ6.js.map

@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { ProductComponent } from './components/product/product.component';
 import HomeComponent from './pages/home/home.component';
 import { ContainerComponent } from './components/container/container.component';
 import { AppComponent } from './app.component';
@@ -13,7 +12,7 @@ export const routes: Routes = [
     component: HomeComponent,
     children: [{ path: '', component: HomeComponent }],
   },
-  { path: 'product', component: ProductComponent },
+
   { path: 'auth', component: AuthComponent },
   { path: 'raiting', component: RaitingComponent },
   { path: 'college', component: CollegeComponent },
