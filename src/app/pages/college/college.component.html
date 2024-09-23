@@ -1,11 +1,32 @@
 <section class="college-section">
-  <h1 class="college-title">Аэрокосмический колледж</h1>
+  <h1 class="college__title">Аэрокосмический колледж</h1>
+
   <div class="college-card__block">
-    <h1>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque ipsa,
-      quasi molestias eligendi quia veritatis similique placeat alias fugiat
-      quis voluptates praesentium officiis provident tenetur soluta ducimus a
-      voluptatem. Sed!
-    </h1>
+    <div class="college-card">
+      <h1 class="college-card__title">Первые в сфере программирования</h1>
+      <p class="college-card__description">
+        Мы — первые в сфере программирования в России и странах СНГ
+      </p>
+    </div>
+    <div class="college-card">
+      <h1 class="college-card__title">Победители в WordSkills 2024</h1>
+      <p class="college-card__description">
+        Да, Да, мы те самые победители сложнейшего соревнования WordSkills 2024
+      </p>
+    </div>
+    <div class="college-card">
+      <h1 class="college-card__title">
+        Более 1000 студентов работают по профессии уже со 2 курса
+      </h1>
+      <p class="college-card__description">
+        На таких предприятиях как: Красмаш, Роснефть, Ростелеком
+      </p>
+    </div>
+  </div>
+  <h1 class="college__title">Cпециальности</h1>
+  <div class="college__spec">
+    <div class="college-spec__block" *ngFor="let item of specialnosti">
+      <p class="college__spec-title">{{ item.name }}</p>
+    </div>
   </div>
 </section>

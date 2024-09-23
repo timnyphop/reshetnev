@@ -1,28 +1,78 @@
 .college-section {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
-  gap: 40px;
   margin-top: 40px;
+  gap: 40px;
 }
-.college-title {
-  width: auto;
-  height: auto;
+.college__title {
+  max-width: 500px;
   font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  display: flex;
-  border-radius: 20px;
-  border-bottom: 1px solid lightgray;
-  padding: 15px 5px;
+  font-weight: 800;
   line-height: 36px;
-  box-sizing: border-box;
+  border-radius: 20px;
   margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid lightgray;
 }
 .college-card__block {
   width: 100%;
-  max-width: 600px;
   height: auto;
+  margin-top: 60px;
   display: flex;
-  justify-content: flex-start;
-  background-color: blue;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.college-card__description {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+.college-card__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+}
+.college-card {
+  width: calc(100% / 3 - 30px);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  background-color: var(--primary);
+  border-radius: 20px;
+  gap: 20px;
+}
+.college__spec {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  gap: 16px;
+}
+.college-spec__block {
+  display: flex;
+  height: auto;
+}
+.college__spec-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  display: flex;
+  height: auto;
+}
+@media screen and (max-width: 760px) {
+  .college-card__block {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .college-card {
+    width: 100%;
+  }
 }

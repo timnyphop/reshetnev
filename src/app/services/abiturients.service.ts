@@ -10,9 +10,11 @@ export class AbiturientsService {
   abiturients$: Observable<IAbiturient[]> = new Observable();
   constructor(private http: HttpClient) {}
 
-  getAllAbiturients() {
+  getAllAbiturients(specialityCode?: number) {
     return (this.abiturients$ = this.http.get<IAbiturient[]>(
-      'http://192.168.31.106:3000/api/abiturients',
+      `http://192.168.31.106:3000/api/abiturients ${
+        specialityCode ? `?specialityCode=${specialityCode}` : ''
+      }`,
     ));
   }
 }

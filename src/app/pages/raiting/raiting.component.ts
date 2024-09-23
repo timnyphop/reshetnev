@@ -21,24 +21,26 @@ export class RaitingComponent {
   }
   sortStudent(students: IAbiturient[]): IAbiturient[] {
     if (students.length > 50) {
-      students = students.sort((a, b) => {
-        // Если у b originalsertificate true, он идет вперед
-        if (b.originalsertificate && !a.originalsertificate) {
-          return 1;
-        }
-        // Если у a originalsertificate true, он идет вперед
-        if (a.originalsertificate && !b.originalsertificate) {
-          return -1;
-        }
-        if (b.svo && !a.svo) {
-          return 1;
-        }
-        if (a.svo && !b.svo) {
-          return -1;
-        }
-        // Если у обоих originalsertificate true или оба false, сортируем по average score
-        return b.averagescore - a.averagescore;
-      });
+      students = students
+        .sort((a, b) => {
+          // Если у b originalsertificate true, он идет вперед
+          if (b.originalsertificate && !a.originalsertificate) {
+            return 1;
+          }
+          // Если у a originalsertificate true, он идет вперед
+          if (a.originalsertificate && !b.originalsertificate) {
+            return -1;
+          }
+          if (b.svo && !a.svo) {
+            return 1;
+          }
+          if (a.svo && !b.svo) {
+            return -1;
+          }
+          // Если у обоих originalsertificate true или оба false, сортируем по average score
+          return b.averagescore - a.averagescore;
+        })
+        .slice(0, 50);
     }
     return students;
   }
