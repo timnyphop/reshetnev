@@ -18,7 +18,9 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  user-select: none;
+}
 .under-title {
   font-size: 34px;
   font-weight: 700;

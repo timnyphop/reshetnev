@@ -6,6 +6,14 @@
   box-sizing: border-box;
   line-height: 26px;
 }
+.raiting-section {
+  height: auto;
+  width: 100%;
+  margin-top: 40px;
+}
+.budeget__span {
+  font-weight: 700;
+}
 .column__primer {
   display: flex;
   flex-direction: column;
@@ -34,6 +42,7 @@
   background-color: rgba(67, 187, 67, 0.5);
   align-items: center;
 }
+
 .original {
   background-color: rgba(67, 187, 67, 0.5);
 }

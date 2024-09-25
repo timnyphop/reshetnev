@@ -25,8 +25,20 @@
   </div>
   <h1 class="college__title">Cпециальности</h1>
   <div class="college__spec">
-    <div class="college-spec__block" *ngFor="let item of specialnosti">
-      <p class="college__spec-title">{{ item.name }}</p>
+    <div class="college-spec-card" *ngFor="let item of specialnosti">
+      <h1 class="college-spec-card__title">
+        <span class="college-spec-title-name"> {{ item.name }}</span>
+      </h1>
+      <div class="college-spec-card__description">
+        <h1 class="college-spec-card__title">Код специальности</h1>
+
+        <p class="college-spec-card__description-text">
+          {{ item.codespecialnosti }}
+        </p>
+        <h1 class="college-spec-card__title">
+          Бюджет: {{ item.budget ? 'Да' : 'Нет' }}
+        </h1>
+      </div>
     </div>
   </div>
 </section>
