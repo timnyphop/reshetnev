@@ -4,7 +4,7 @@
 
 :root {
   --primary: #056c7d;
-  --second: #00c8ff;
+  --second: lightgray;
   --tui-font-text: 'Open Sans';
   --tui-font-text-m: bold 1rem/1.5rem var(--tui-font-text);
   --tui-font-text-s: normal 0.5rem/1.25rem var(--tui-font-text);
@@ -12,6 +12,21 @@
   --tui-background-accent-1-pressed: var(--primary);
   --tui-text-primary-on-accent-1: #fff;
   --tui-text-primary-on-accent-2: #fff;
+  [tuiIcons]:before,
+  [tuiIcons]:after {
+    background: var(--primary);
+  }
+  [tuiAppearance][data-appearance='secondary'],
+  [tuiAppearance][data-appearance='secondary']:before,
+  [tuiAppearance][data-appearance='secondary']:after {
+    background: var(--second);
+    color: black;
+  }
+  [tuiAppearance][data-appearance='secondary'],
+  [tuiAppearance][data-appearance='flat'],
+  [tuiAppearance][data-appearance='destructive'] {
+    color: var(--primary);
+  }
 }
 
 * {

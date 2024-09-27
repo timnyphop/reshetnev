@@ -3,6 +3,7 @@
     Оригинал аттестата нужно принести до 15 августа! Иначе абитуриент не будет
     рассматриваться к зачислению
   </h1>
+
   <div class="column__primer">
     <div class="primer__block">
       <div class="color-primer"></div>
@@ -15,57 +16,82 @@
       </p>
     </div>
   </div>
-  <div class="" *ngFor="let item of specialnosti">
-    <h1 class="title">
-      {{ item.name }}, Бюджет:
-      <span class="budeget__span">{{ item.budget ? 'Да' : 'Нет' }}</span
-      >, код специальности: {{ item.codespecialnosti }}
-    </h1>
-    <!-- Условие рендеринга таблицы только при наличии данных -->
-    <table border="1">
-      <thead>
-        <tr class="tui-table__title">
-          <th>Место</th>
-          <th>Средний балл</th>
-          <th>ФИО</th>
-          <th>Аттестат</th>
-          <th>СВО</th>
-          <th>Высший приоритет</th>
-          <th>Особые условия</th>
-        </tr>
-      </thead>
-      <tbody>
-        <ng-container>
-          <tr>
-            <!-- Имя специальности -->
-          </tr>
-          <ng-container
-            *ngFor="let abiturient of item.abiturients; let i = index"
-          >
-            <tr
-              [ngClass]="abiturient.originalsertificate ? 'original' : 'back'"
-            >
-              <td class="text__td">{{ i + 1 }}</td>
-              <td class="text__td">{{ abiturient.averagescore }}</td>
-              <td class="text__td">{{ abiturient.fullname }}</td>
-              <td class="text__td">
-                {{ abiturient.originalsertificate ? 'Да' : 'Нет' }}
-              </td>
-              <td class="text__td">
-                <span [ngClass]="abiturient.svo ? 'span-svo' : ''">
-                  {{ abiturient.svo ? 'Да' : 'Нет' }}
-                </span>
-              </td>
-              <td class="text__td">
-                {{ abiturient.originalsertificate ? 'Да' : 'Нет' }}
-              </td>
-              <td class="text__td">
-                {{ abiturient.originalsertificate ? 'Да' : 'Нет' }}
-              </td>
-            </tr>
-          </ng-container>
-        </ng-container>
-      </tbody>
-    </table>
+  <div class="raiting__block">
+    <h1 class="raiting__title">Рейтинговые списки</h1>
+    <div
+      class="specialnosti__preloader"
+      *ngIf="
+        !specialnosti || specialnosti.length === 0;
+        else specialnostiContent
+      "
+    >
+      <app-preloader></app-preloader>
+    </div>
+
+    <ng-template #specialnostiContent>
+      <div *ngFor="let item of specialnosti">
+        <h1 class="title">
+          <span class="budeget__span">{{ item.name }}</span
+          >, Бюджет:
+          <span class="budeget__span">{{ item.budget ? 'Да' : 'Нет' }}</span
+          >, код специальности: {{ item.codespecialnosti }}
+        </h1>
+
+        <!-- Проверка наличия абитуриентов у специальности -->
+        <div
+          *ngIf="
+            item.abiturients && item.abiturients.length > 0;
+            else noAbiturients
+          "
+        >
+          <table border="1">
+            <thead>
+              <tr class="tui-table__title">
+                <th>Место</th>
+                <th>Средний балл</th>
+                <th>ФИО</th>
+                <th>Аттестат</th>
+                <th>СВО</th>
+                <th>Высший приоритет</th>
+                <th>Особые условия</th>
+              </tr>
+            </thead>
+            <tbody>
+              <ng-container
+                *ngFor="let abiturient of item.abiturients; let i = index"
+              >
+                <tr
+                  [ngClass]="
+                    abiturient.originalsertificate ? 'original' : 'back'
+                  "
+                >
+                  <td class="text__td">{{ i + 1 }}</td>
+                  <td class="text__td">{{ abiturient.averagescore }}</td>
+                  <td class="text__td">{{ abiturient.fullname }}</td>
+                  <td class="text__td">
+                    {{ abiturient.originalsertificate ? 'Да' : 'Нет' }}
+                  </td>
+                  <td class="text__td">
+                    <span [ngClass]="abiturient.svo ? 'span-svo' : ''">{{
+                      abiturient.svo ? 'Да' : 'Нет'
+                    }}</span>
+                  </td>
+                  <td class="text__td">
+                    {{ abiturient.originalsertificate ? 'Да' : 'Нет' }}
+                  </td>
+                  <td class="text__td">
+                    {{ abiturient.originalsertificate ? 'Да' : 'Нет' }}
+                  </td>
+                </tr>
+              </ng-container>
+            </tbody>
+          </table>
+        </div>
+
+        <ng-template #noAbiturients>
+          <p>Нет данных об абитуриентах для этой специальности.</p>
+        </ng-template>
+      </div>
+    </ng-template>
   </div>
 </section>
