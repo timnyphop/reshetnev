@@ -4,7 +4,7 @@
   <h1 class="under-title">Наши партнеры</h1>
   <div class="partner-card__block">
     <div class="partner-card" *ngFor="let item of items">
-      <img src="{{ item.imgUrl }}" class="partner-card__img" />
+      <img src="{{ item.imgurl }}" class="partner-card__img" />
       <h1 class="partner-card__title">{{ item.name }}</h1>
       <p class="partner-card__description">{{ item.description }}</p>
     </div>
@@ -18,7 +18,7 @@
     <tui-carousel [duration]="duration" [(index)]="index" class="carousel">
       <ng-container *ngFor="let item of items">
         <div class="carousel__block-mobile" *tuiItem>
-          <img src="{{ item.imgUrl }}" class="partner-card__img" />
+          <img src="{{ item.imgurl }}" class="partner-card__img" />
           <h1 class="partner-card__title">{{ item.name }}</h1>
           <h2 class="partners-card__description">{{ item.description }}</h2>
         </div>
