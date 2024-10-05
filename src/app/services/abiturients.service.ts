@@ -1,4 +1,4 @@
-import { Component, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { IAbiturient } from '../../types/abiturient';
 import { Observable } from 'rxjs';
@@ -14,7 +14,7 @@ export class AbiturientsService {
 
   getAllAbiturientsBySpecialnost(): Observable<ISpecialnost[]> {
     return this.http.get<ISpecialnost[]>(
-      'http://192.168.31.106:3000/api/specialnosti',
+      'http://192.168.31.107:3000/api/specialnosti',
     );
   }
 }

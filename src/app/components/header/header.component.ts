@@ -3,7 +3,6 @@ import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
-  OnInit,
 } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { TuiActiveZone, TuiObscured } from '@taiga-ui/cdk';
@@ -17,7 +16,6 @@ import {
 import { TuiAccordion, TuiChevron } from '@taiga-ui/kit';
 import { filter } from 'rxjs';
 import { TuiSidebar } from '@taiga-ui/addon-mobile';
-import { TestHttpComponent } from '../test-http/test-http.component';
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -35,7 +33,6 @@ import { TestHttpComponent } from '../test-http/test-http.component';
     TuiSidebar,
     TuiIcon,
     TuiIconPipe,
-    TestHttpComponent,
   ],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],

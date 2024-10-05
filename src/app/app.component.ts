@@ -1,4 +1,4 @@
-import { TuiRoot } from "@taiga-ui/core";
+import { TuiRoot } from '@taiga-ui/core';
 // app.component.ts
 import { Component, OnInit } from '@angular/core';
 import { UserInfoService } from './services/user-info.service';
@@ -8,7 +8,6 @@ import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ContainerComponent } from './components/container/container.component';
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -22,8 +21,8 @@ import { ContainerComponent } from './components/container/container.component';
     HeaderComponent,
     ContainerComponent,
     ContainerComponent,
-      TuiRoot
-],
+    TuiRoot,
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

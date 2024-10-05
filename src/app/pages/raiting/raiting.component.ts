@@ -1,14 +1,13 @@
 import { CommonModule, SlicePipe } from '@angular/common';
 import { IAbiturient } from '../../../types/abiturient';
 import { ISpecialnost } from '../../../types/specialnost';
-import { TestHttpComponent } from '../../components/test-http/test-http.component';
 import { AbiturientsService } from '../../services/abiturients.service';
 import { Component } from '@angular/core';
 import { PreloaderComponent } from '../../components/preloader/preloader.component';
 
 @Component({
   selector: 'app-raiting',
-  imports: [CommonModule, SlicePipe, TestHttpComponent, PreloaderComponent],
+  imports: [CommonModule, SlicePipe, PreloaderComponent],
   templateUrl: './raiting.component.html',
   styleUrls: ['./raiting.component.scss'],
   standalone: true,

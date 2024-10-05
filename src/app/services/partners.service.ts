@@ -11,7 +11,7 @@ export class PartnersService {
   constructor(private http: HttpClient) {}
   getAllPartners(): Observable<IPartners[]> {
     return (this.partners$ = this.http.get<IPartners[]>(
-      'http://192.168.31.106:3000/api/partners',
+      'http://192.168.31.107:3000/api/partners',
     ));
   }
 }

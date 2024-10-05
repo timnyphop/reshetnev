@@ -1,4 +1,9 @@
 //desktop
+
+.preloader {
+  display: flex;
+  justify-content: center;
+}
 .partner__block {
   width: 100%;
   height: auto;
@@ -17,12 +22,13 @@
 
 .partner-card__block {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 40px;
+  flex-wrap: wrap;
 }
 .partner-card {
-  width: 100%;
-  max-width: 300px;
+  width: calc(100% / 3 - 40px);
+  max-width: 450px;
   height: auto;
   display: flex;
   flex-direction: column;

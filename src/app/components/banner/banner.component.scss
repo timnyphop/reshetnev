@@ -2,112 +2,116 @@
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: space-between;
-  border-radius: 20px;
+  flex-direction: column;
   gap: 20px;
   align-items: stretch;
+  margin-top: 5px;
 }
-.banner-text__block {
+.banner__block-content {
   width: 100%;
-  min-width: 600px;
-  max-width: 600px;
   height: auto;
-  padding: 40px 20px;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  border: 1px solid lightgray;
-  border-radius: 20px;
-  box-sizing: border-box;
+  justify-content: space-between;
 }
 .banner__title {
-  width: 100%;
-  max-width: 600px;
-  line-height: 48px;
-  font-size: 48px;
-  font-weight: 600;
-}
-.banner__text {
-  width: 100%;
-  max-width: 600px;
-  font-size: 26px;
-  font-weight: 500;
-  line-height: 36px;
-}
-.banner__text-under-block {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  justify-content: center;
-  gap: 20px;
-}
-.banner-bold__text {
-  font-weight: 700;
-}
-.banner__text-under {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 26px;
-}
-.banner__card-block {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.banner__card {
-  width: calc(100% / 2 - 20px);
-  height: auto;
   text-align: center;
-  border: 1px solid var(--primary);
-  border-radius: 15px;
-  padding: 10px 10px;
+}
+.banner__card-left {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+
+  border-radius: 20px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+.banner__chip-specialnosti {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.banner__chip {
   display: flex;
   justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: default;
-}
-.banner__card-title {
-  font-size: 24px;
-  color: var(--primary);
-  font-weight: 700;
-}
-.banner__img {
-  width: calc(100% / 2 - 10px);
+  width: calc(100% / 3 - 10px);
   height: auto;
-  max-height: 220px;
-  border-radius: 20px;
-  max-height: 251px;
+  padding: 8px 0;
 }
 
-.banner__img-block {
+.banner__card-right {
+  width: 100%;
+  max-width: 550px;
+}
+.banner__card-right-content {
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
-  height: auto;
-  border: 1px solid lightgray;
-  border-radius: 20px;
-  padding: 5px 10px;
-  box-sizing: border-box;
 }
-
+.banner__card-img1 {
+  width: calc(100% / 2 - 20px);
+  height: 200px;
+  background: url('https://freebiesbug.com/wp-content/uploads/2023/03/macbook-air-mockup-figma.png')
+    no-repeat center / cover;
+  &::before {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+.banner__card-img2 {
+  width: calc(100% / 2 - 20px);
+  height: 200px;
+  background: url('https://img.freepik.com/free-photo/production-electronic-components-high-tech-factory_1385-3207.jpg?t=st=1728135415~exp=1728139015~hmac=eab99c7fa570669c69be091b9146c0a53ad0f58bf0dd9c4ddfc5a4e973fcd622&w=1480')
+    no-repeat center / cover;
+  &::before {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+.banner__card-img3 {
+  width: calc(100% / 2 - 20px);
+  height: 200px;
+  background: url('https://img.freepik.com/free-vector/steel-production-illustration_1284-32648.jpg?t=st=1728136372~exp=1728139972~hmac=0f8d0eb015441f666dbf97b4ae13ea58ca837725fc37bc671e4aa6fe46ebf9e2&w=1380')
+    no-repeat center / cover;
+  &::before {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+.banner__card-img4 {
+  width: calc(100% / 2 - 20px);
+  height: 200px;
+  background: url('https://img.freepik.com/free-photo/experienced-operator-hard-hat_146671-19558.jpg?t=st=1728136533~exp=1728140133~hmac=37052510eac893b337473a767b9ed1b4a882ab9e97bdfbc777fcc46767591f97&w=1480')
+    no-repeat center / cover;
+  &::before {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
 @media screen and (max-width: 760px) {
-  .banner__card {
-    width: 100%;
+  .banner__block-content {
+    flex-direction: column;
+    gap: 10px;
   }
-  .banner__img-block {
+  .banner__card-right-content {
     flex-direction: column;
   }
-  .banner__img {
+  .banner__card-img1 {
     width: 100%;
   }
-  .banner__block {
+  .banner__card-img2 {
+    width: 100%;
+  }
+  .banner__card-img3 {
+    width: 100%;
+  }
+  .banner__card-img4 {
+    width: 100%;
+  }
+  .banner__chip-specialnosti {
     flex-direction: column;
   }
-  .banner-text__block {
-    min-width: 100%;
+  .banner__chip {
+    width: 100%;
   }
 }

@@ -25,6 +25,7 @@
   </div>
   <h1 class="college__title">Cпециальности</h1>
   <div class="college__spec">
+    <app-preloader *ngIf="loading" class="preloader"></app-preloader>
     <div class="college-spec-card" *ngFor="let item of specialnosti">
       <h1 class="college-spec-card__title">
         <span class="college-spec-title-name"> {{ item.name }}</span>

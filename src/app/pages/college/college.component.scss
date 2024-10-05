@@ -7,6 +7,10 @@
   gap: 40px;
   cursor: default;
 }
+.preloader {
+  display: flex;
+  justify-content: center;
+}
 .college__title {
   max-width: 500px;
   font-size: 36px;
