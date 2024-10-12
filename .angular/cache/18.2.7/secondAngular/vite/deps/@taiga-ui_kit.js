@@ -1,38 +1,4 @@
 import {
-  TUI_ALERTS
-} from "./chunk-6JT3DYX5.js";
-import {
-  TUI_CHECKBOX_DEFAULT_OPTIONS,
-  TUI_CHECKBOX_OPTIONS,
-  TUI_FLOATING_PRECISION,
-  TUI_SLIDER_DEFAULT_OPTIONS,
-  TUI_SLIDER_OPTIONS,
-  TuiCalendarMonth,
-  TuiCheckbox,
-  TuiDataListGroupWrapperComponent,
-  TuiDataListWrapper,
-  TuiDataListWrapperComponent,
-  TuiRange,
-  TuiRangeChange,
-  TuiSlider,
-  TuiSliderComponent,
-  TuiSliderKeySteps,
-  TuiSliderReadonly,
-  TuiSliderThumbLabel,
-  TuiStringifyContentPipe,
-  maskitoCaretGuard,
-  maskitoPrefixPostprocessorGenerator,
-  maskitoRemoveOnBlurPlugin,
-  tuiCheckboxOptionsProvider,
-  tuiKeyStepValueToPercentage,
-  tuiPercentageToKeyStepValue,
-  tuiSliderOptionsProvider
-} from "./chunk-SM6FUJ6U.js";
-import {
-  TuiGroup,
-  tuiGroupOptionsProvider
-} from "./chunk-HTCHZMBI.js";
-import {
   MutationObserverService,
   TUI_AVATAR_DEFAULT_OPTIONS,
   TUI_AVATAR_OPTIONS,
@@ -100,16 +66,50 @@ import {
   tuiPasswordOptionsProvider,
   tuiSwitchOptionsProvider,
   tuiTabsOptionsProvider
-} from "./chunk-PWFNFRFA.js";
+} from "./chunk-HO5NDU3I.js";
+import {
+  TUI_CHECKBOX_DEFAULT_OPTIONS,
+  TUI_CHECKBOX_OPTIONS,
+  TUI_FLOATING_PRECISION,
+  TUI_SLIDER_DEFAULT_OPTIONS,
+  TUI_SLIDER_OPTIONS,
+  TuiCalendarMonth,
+  TuiCheckbox,
+  TuiDataListGroupWrapperComponent,
+  TuiDataListWrapper,
+  TuiDataListWrapperComponent,
+  TuiRange,
+  TuiRangeChange,
+  TuiSlider,
+  TuiSliderComponent,
+  TuiSliderKeySteps,
+  TuiSliderReadonly,
+  TuiSliderThumbLabel,
+  TuiStringifyContentPipe,
+  maskitoCaretGuard,
+  maskitoPrefixPostprocessorGenerator,
+  maskitoRemoveOnBlurPlugin,
+  tuiCheckboxOptionsProvider,
+  tuiKeyStepValueToPercentage,
+  tuiPercentageToKeyStepValue,
+  tuiSliderOptionsProvider
+} from "./chunk-C7WKPE2C.js";
+import {
+  TUI_CHEVRON,
+  TuiChevron
+} from "./chunk-E4A3HSIZ.js";
+import {
+  TUI_ALERTS
+} from "./chunk-Z4N5WMRC.js";
 import {
   TuiExpand,
   TuiExpandComponent,
   TuiExpandContent
-} from "./chunk-J34JK4IF.js";
+} from "./chunk-G6KIPXXQ.js";
 import {
-  TUI_CHEVRON,
-  TuiChevron
-} from "./chunk-WKDXQ2R3.js";
+  TuiGroup,
+  tuiGroupOptionsProvider
+} from "./chunk-BALLPL2T.js";
 import {
   TUI_HINT_COMPONENT,
   TUI_HINT_PROVIDERS,
@@ -128,23 +128,18 @@ import {
   TuiTextfieldDirective,
   TuiTextfieldDropdownDirective,
   tuiTextfieldOptionsProvider
-} from "./chunk-UK6SYIRF.js";
+} from "./chunk-GTOOLSKA.js";
 import {
-  TuiPan,
-  TuiValidator,
-  TuiZoom
-} from "./chunk-5ZKQVUWE.js";
-import "./chunk-5L6WHZO3.js";
+  WaIntersectionObservee,
+  WaIntersectionObserver,
+  WaIntersectionObserverDirective,
+  WaIntersectionRoot
+} from "./chunk-A4CNCZT4.js";
 import {
-  TuiNativeValidator
-} from "./chunk-JWZEEKFC.js";
-import {
-  TuiItem
-} from "./chunk-77KMEMCQ.js";
-import {
-  TUI_DIALOGS,
-  TuiDialogService
-} from "./chunk-NBPPRWP2.js";
+  ActivatedRoute,
+  Router,
+  RouterLinkActive
+} from "./chunk-PTF5R27U.js";
 import {
   MaskitoDirective,
   TUI_DAY_CAPS_MAPPER,
@@ -156,24 +151,7 @@ import {
   tuiIsFlat,
   tuiMaskito,
   tuiToggleDay
-} from "./chunk-CNL6V3EN.js";
-import {
-  TuiFlagPipe,
-  TuiFormatDatePipe,
-  TuiLink,
-  tuiLinkOptionsProvider
-} from "./chunk-CNRO4VVL.js";
-import {
-  WaIntersectionObservee,
-  WaIntersectionObserver,
-  WaIntersectionObserverDirective,
-  WaIntersectionRoot
-} from "./chunk-BWOPU3XL.js";
-import {
-  ActivatedRoute,
-  Router,
-  RouterLinkActive
-} from "./chunk-J3ZGQDJ2.js";
+} from "./chunk-FSN5HPJX.js";
 import {
   MASKITO_DEFAULT_OPTIONS,
   TUI_CALENDAR_DATE_STREAM,
@@ -219,7 +197,17 @@ import {
   tuiInputDateOptionsProvider,
   tuiItemsHandlersProvider,
   tuiPreviewIconsProvider
-} from "./chunk-AHOJEMF6.js";
+} from "./chunk-6S6BGGGU.js";
+import {
+  TUI_DIALOGS,
+  TuiDialogService
+} from "./chunk-DC7J66EL.js";
+import {
+  TuiFlagPipe,
+  TuiFormatDatePipe,
+  TuiLink,
+  tuiLinkOptionsProvider
+} from "./chunk-2JTTTJFO.js";
 import {
   ResizeObserverService,
   TUI_ANIMATIONS_SPEED,
@@ -260,22 +248,34 @@ import {
   tuiSlideInRight,
   tuiSlideInTop,
   tuiToAnimationOptions
-} from "./chunk-VHZHJUUS.js";
+} from "./chunk-UVVLRUXO.js";
 import {
   shouldCall
-} from "./chunk-5AHT5KTY.js";
+} from "./chunk-C47N4ZBO.js";
+import {
+  TuiPan,
+  TuiValidator,
+  TuiZoom
+} from "./chunk-SZ4YKJTK.js";
+import {
+  TuiItem
+} from "./chunk-TKEFBSRD.js";
+import "./chunk-KEI7LUSK.js";
+import {
+  TuiNativeValidator
+} from "./chunk-EIH4H6ZQ.js";
 import {
   TuiSwipe
-} from "./chunk-2L4KG4BB.js";
+} from "./chunk-A6ORIRYP.js";
 import {
   TuiAutoFocus
-} from "./chunk-ERLSLKKF.js";
+} from "./chunk-UIJ63FDF.js";
 import {
   TuiLet,
   TuiPopoverDirective,
   TuiRepeatTimes,
   coerceArray
-} from "./chunk-MRXIBML3.js";
+} from "./chunk-DCYODZBR.js";
 import {
   CHAR_NO_BREAK_SPACE,
   CHAR_PLUS,
@@ -337,7 +337,8 @@ import {
   tuiZonefree,
   tuiZonefreeScheduler,
   tuiZonefull
-} from "./chunk-VAG3OFHX.js";
+} from "./chunk-4OMUCSCF.js";
+import "./chunk-IU2M26LM.js";
 import {
   CheckboxControlValueAccessor,
   ControlContainer,
@@ -351,12 +352,11 @@ import {
   RangeValueAccessor,
   SelectControlValueAccessor,
   Validators
-} from "./chunk-VQHASJ45.js";
-import "./chunk-O7P3HWDJ.js";
+} from "./chunk-HDXU2QND.js";
 import {
   DomSanitizer
-} from "./chunk-U32A7555.js";
-import "./chunk-AW4PJU6I.js";
+} from "./chunk-T32ZENQO.js";
+import "./chunk-55737RLF.js";
 import {
   AsyncPipe,
   CommonModule,
@@ -366,7 +366,7 @@ import {
   NgTemplateOutlet,
   PercentPipe,
   isPlatformBrowser
-} from "./chunk-OREPAVVY.js";
+} from "./chunk-VFDX42D3.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -450,18 +450,14 @@ import {
   ɵɵtwoWayListener,
   ɵɵtwoWayProperty,
   ɵɵviewQuery
-} from "./chunk-H2EPMWCO.js";
+} from "./chunk-GJNOSL6X.js";
 import {
   BehaviorSubject,
   EMPTY,
   Observable,
   Subject,
   Subscription,
-  __async,
   __decorate,
-  __objRest,
-  __spreadProps,
-  __spreadValues,
   combineLatest,
   debounce,
   debounceTime,
@@ -483,7 +479,13 @@ import {
   tap,
   throttleTime,
   timer
-} from "./chunk-2WRQ7LJK.js";
+} from "./chunk-YX5744VY.js";
+import {
+  __async,
+  __objRest,
+  __spreadProps,
+  __spreadValues
+} from "./chunk-QHQP2P2Z.js";
 
 // node_modules/@taiga-ui/kit/fesm2022/taiga-ui-kit-components-accordion.mjs
 var _c0 = ["*", [["", "tuiAccordionItemContent", ""]]];

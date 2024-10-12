@@ -4,6 +4,7 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideHttpClient } from '@angular/common/http';
 import { NG_EVENT_PLUGINS } from '@taiga-ui/event-plugins';
 import { routes } from './app.routes';
+import { provideIonicAngular } from '@ionic/angular/standalone';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -12,6 +13,6 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideHttpClient(),
     { provide: NG_EVENT_PLUGINS, useValue: NG_EVENT_PLUGINS },
-    { provide: 'Pythons', useValue: ['Python1', 'Python2', 'Python3'] },
+    { provide: 'Pythons', useValue: ['Python1', 'Python2', 'Python3'] }, provideIonicAngular({}),
   ],
 };

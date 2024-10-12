@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ContainerComponent } from './components/container/container.component';
+import { IonApp, IonContent } from '@ionic/angular/standalone';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -22,6 +24,8 @@ import { ContainerComponent } from './components/container/container.component';
     ContainerComponent,
     ContainerComponent,
     TuiRoot,
+    IonApp,
+    IonContent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

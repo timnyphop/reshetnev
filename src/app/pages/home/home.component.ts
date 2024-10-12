@@ -15,7 +15,7 @@ import { MilitaryComponent } from '../../components/military/military.component'
 
 @Component({
   standalone: true,
-  exportAs: 'Example1',
+  exportAs: 'HomeComponent',
   imports: [
     CommonModule,
     BannerComponent,

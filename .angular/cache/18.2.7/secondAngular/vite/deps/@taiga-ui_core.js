@@ -13,22 +13,22 @@ import {
   TuiNotification,
   TuiTitle,
   tuiNotificationOptionsProvider
-} from "./chunk-6JT3DYX5.js";
-import {
-  TuiNumberFormat
-} from "./chunk-ATITQCMP.js";
-import {
-  TUI_GROUP_DEFAULT_OPTIONS,
-  TUI_GROUP_OPTIONS,
-  TuiGroup,
-  tuiGroupOptionsProvider
-} from "./chunk-HTCHZMBI.js";
+} from "./chunk-Z4N5WMRC.js";
 import {
   TUI_EXPAND_LOADED,
   TuiExpand,
   TuiExpandComponent,
   TuiExpandContent
-} from "./chunk-J34JK4IF.js";
+} from "./chunk-G6KIPXXQ.js";
+import {
+  TuiNumberFormat
+} from "./chunk-EQEXY5AC.js";
+import {
+  TUI_GROUP_DEFAULT_OPTIONS,
+  TUI_GROUP_OPTIONS,
+  TuiGroup,
+  tuiGroupOptionsProvider
+} from "./chunk-BALLPL2T.js";
 import {
   TUI_HINT_COMPONENT,
   TUI_HINT_DEFAULT_OPTIONS,
@@ -64,11 +64,7 @@ import {
   TuiWithTextfieldDropdown,
   tuiHintOptionsProvider,
   tuiTextfieldOptionsProvider
-} from "./chunk-UK6SYIRF.js";
-import {
-  TuiPlatform
-} from "./chunk-WMU7IPMZ.js";
-import "./chunk-JWZEEKFC.js";
+} from "./chunk-GTOOLSKA.js";
 import {
   TUI_DIALOGS,
   TUI_DIALOGS_CLOSE,
@@ -80,7 +76,7 @@ import {
   TuiDialogService,
   TuiDialogs,
   tuiDialogOptionsProvider
-} from "./chunk-NBPPRWP2.js";
+} from "./chunk-DC7J66EL.js";
 import {
   TUI_LINK_DEFAULT_OPTIONS,
   TUI_LINK_OPTIONS,
@@ -100,7 +96,7 @@ import {
   TuiOrderWeekDaysPipe,
   TuiSpinButton,
   tuiLinkOptionsProvider
-} from "./chunk-CNRO4VVL.js";
+} from "./chunk-2JTTTJFO.js";
 import {
   SCROLL_REF_SELECTOR,
   TUI_ANIMATIONS_DEFAULT_DURATION,
@@ -274,12 +270,16 @@ import {
   tuiToAnimationOptions,
   tuiWidthCollapse,
   tuiWidthCollapseList
-} from "./chunk-VHZHJUUS.js";
+} from "./chunk-UVVLRUXO.js";
 import {
   PreventEventPlugin
-} from "./chunk-5AHT5KTY.js";
-import "./chunk-ERLSLKKF.js";
-import "./chunk-MRXIBML3.js";
+} from "./chunk-C47N4ZBO.js";
+import {
+  TuiPlatform
+} from "./chunk-2JBT7KQ6.js";
+import "./chunk-EIH4H6ZQ.js";
+import "./chunk-UIJ63FDF.js";
+import "./chunk-DCYODZBR.js";
 import {
   PolymorpheusOutlet,
   TUI_IS_MOBILE,
@@ -291,17 +291,17 @@ import {
   tuiWatch,
   tuiWithStyles,
   tuiZonefreeScheduler
-} from "./chunk-VAG3OFHX.js";
-import "./chunk-VQHASJ45.js";
-import "./chunk-O7P3HWDJ.js";
+} from "./chunk-4OMUCSCF.js";
+import "./chunk-IU2M26LM.js";
+import "./chunk-HDXU2QND.js";
 import {
   EVENT_MANAGER_PLUGINS
-} from "./chunk-U32A7555.js";
-import "./chunk-AW4PJU6I.js";
+} from "./chunk-T32ZENQO.js";
+import "./chunk-55737RLF.js";
 import {
   DOCUMENT,
   NgIf
-} from "./chunk-OREPAVVY.js";
+} from "./chunk-VFDX42D3.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -336,15 +336,17 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate1
-} from "./chunk-H2EPMWCO.js";
+} from "./chunk-GJNOSL6X.js";
 import {
   Observable,
   ReplaySubject,
-  __spreadValues,
   combineLatest,
   debounceTime,
   map
-} from "./chunk-2WRQ7LJK.js";
+} from "./chunk-YX5744VY.js";
+import {
+  __spreadValues
+} from "./chunk-QHQP2P2Z.js";
 
 // node_modules/@taiga-ui/core/fesm2022/taiga-ui-core-components-error.mjs
 var _c0 = () => ({});

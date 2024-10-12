@@ -1,0 +1,12 @@
+{
+  "defaultProject": "secondAngular",
+  "projects": {
+    "secondAngular": {
+      "name": "secondAngular",
+      "integrations": {
+        "capacitor": {}
+      },
+      "type": "angular"
+    }
+  }
+}

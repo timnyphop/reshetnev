@@ -1,7 +1,4 @@
 import {
-  TuiNumberFormat
-} from "./chunk-ATITQCMP.js";
-import {
   TUI_FLOATING_PRECISION,
   TuiCalendarMonth,
   TuiCheckbox,
@@ -24,13 +21,16 @@ import {
   maskitoPrefixPostprocessorGenerator,
   maskitoTimeOptionsGenerator,
   tuiSliderOptionsProvider
-} from "./chunk-SM6FUJ6U.js";
-import {
-  TuiGroup
-} from "./chunk-HTCHZMBI.js";
+} from "./chunk-C7WKPE2C.js";
 import {
   TuiChevron
-} from "./chunk-WKDXQ2R3.js";
+} from "./chunk-E4A3HSIZ.js";
+import {
+  TuiNumberFormat
+} from "./chunk-EQEXY5AC.js";
+import {
+  TuiGroup
+} from "./chunk-BALLPL2T.js";
 import {
   TUI_TEXTFIELD_OPTIONS,
   TuiHint,
@@ -46,22 +46,13 @@ import {
   TuiHintPointer,
   TuiHintPosition,
   TuiHintUnstyled
-} from "./chunk-UK6SYIRF.js";
-import "./chunk-5L6WHZO3.js";
-import "./chunk-JWZEEKFC.js";
+} from "./chunk-GTOOLSKA.js";
 import {
   MaskitoDirective,
   TuiCalendarRange,
   tuiIsFlat,
   tuiToggleDay
-} from "./chunk-CNL6V3EN.js";
-import {
-  TuiCalendar,
-  TuiCalendarYear,
-  TuiFlagPipe,
-  TuiLink,
-  TuiMonthPipe
-} from "./chunk-CNRO4VVL.js";
+} from "./chunk-FSN5HPJX.js";
 import {
   MASKITO_DEFAULT_OPTIONS,
   TUI_COPY_TEXTS,
@@ -82,7 +73,14 @@ import {
   TUI_TIME_VALUE_TRANSFORMER,
   maskitoTransform,
   tuiDateStreamWithTransformer
-} from "./chunk-AHOJEMF6.js";
+} from "./chunk-6S6BGGGU.js";
+import {
+  TuiCalendar,
+  TuiCalendarYear,
+  TuiFlagPipe,
+  TuiLink,
+  TuiMonthPipe
+} from "./chunk-2JTTTJFO.js";
 import {
   TUI_ANIMATIONS_SPEED,
   TUI_CLOSE_WORD,
@@ -131,13 +129,15 @@ import {
   tuiSlideInTop,
   tuiStringHashToHsl,
   tuiToAnimationOptions
-} from "./chunk-VHZHJUUS.js";
-import "./chunk-5AHT5KTY.js";
+} from "./chunk-UVVLRUXO.js";
+import "./chunk-C47N4ZBO.js";
+import "./chunk-KEI7LUSK.js";
+import "./chunk-EIH4H6ZQ.js";
 import {
   TuiLet,
   TuiMapperPipe,
   TuiPopoverDirective
-} from "./chunk-MRXIBML3.js";
+} from "./chunk-DCYODZBR.js";
 import {
   CHAR_EN_DASH,
   CHAR_HYPHEN,
@@ -231,7 +231,8 @@ import {
   tuiWatch,
   tuiZonefree,
   tuiZonefull
-} from "./chunk-VAG3OFHX.js";
+} from "./chunk-4OMUCSCF.js";
+import "./chunk-IU2M26LM.js";
 import {
   DefaultValueAccessor,
   FormsModule,
@@ -243,12 +244,11 @@ import {
   NgSelectOption,
   RangeValueAccessor,
   ɵNgSelectMultipleOption
-} from "./chunk-VQHASJ45.js";
-import "./chunk-O7P3HWDJ.js";
+} from "./chunk-HDXU2QND.js";
 import {
   DomSanitizer
-} from "./chunk-U32A7555.js";
-import "./chunk-AW4PJU6I.js";
+} from "./chunk-T32ZENQO.js";
+import "./chunk-55737RLF.js";
 import {
   AsyncPipe,
   CommonModule,
@@ -259,7 +259,7 @@ import {
   NgIf,
   NgStyle,
   NgTemplateOutlet
-} from "./chunk-OREPAVVY.js";
+} from "./chunk-VFDX42D3.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -344,7 +344,7 @@ import {
   ɵɵtwoWayListener,
   ɵɵtwoWayProperty,
   ɵɵviewQuery
-} from "./chunk-H2EPMWCO.js";
+} from "./chunk-GJNOSL6X.js";
 import {
   BehaviorSubject,
   EMPTY,
@@ -353,12 +353,8 @@ import {
   ReplaySubject,
   Subject,
   __assign,
-  __async,
   __decorate,
-  __objRest,
   __rest,
-  __spreadProps,
-  __spreadValues,
   catchError,
   combineLatest,
   concat,
@@ -387,7 +383,13 @@ import {
   timer,
   withLatestFrom,
   zip
-} from "./chunk-2WRQ7LJK.js";
+} from "./chunk-YX5744VY.js";
+import {
+  __async,
+  __objRest,
+  __spreadProps,
+  __spreadValues
+} from "./chunk-QHQP2P2Z.js";
 
 // node_modules/@taiga-ui/legacy/fesm2022/taiga-ui-legacy-utils.mjs
 function tuiCapitalizeFirstLetter(value) {

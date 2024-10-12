@@ -1,31 +1,31 @@
 import {
-  TuiPlatform
-} from "./chunk-WMU7IPMZ.js";
-import {
   TUI_ZOOM_OPTIONS,
   TuiPan,
   TuiPanService,
   TuiValidator,
   TuiZoom,
   TuiZoomService
-} from "./chunk-5ZKQVUWE.js";
-import {
-  TuiElement
-} from "./chunk-5L6WHZO3.js";
-import {
-  TuiNativeValidator
-} from "./chunk-JWZEEKFC.js";
+} from "./chunk-SZ4YKJTK.js";
 import {
   TuiItem
-} from "./chunk-77KMEMCQ.js";
+} from "./chunk-TKEFBSRD.js";
+import {
+  TuiElement
+} from "./chunk-KEI7LUSK.js";
+import {
+  TuiPlatform
+} from "./chunk-2JBT7KQ6.js";
+import {
+  TuiNativeValidator
+} from "./chunk-EIH4H6ZQ.js";
 import {
   TuiClickOutside
-} from "./chunk-M6JE4GMU.js";
+} from "./chunk-XF2WWPZT.js";
 import {
   TUI_SWIPE_OPTIONS,
   TuiSwipe,
   TuiSwipeService
-} from "./chunk-2L4KG4BB.js";
+} from "./chunk-A6ORIRYP.js";
 import {
   AbstractTuiAutofocusHandler,
   TUI_AUTOFOCUS_HANDLER,
@@ -37,7 +37,7 @@ import {
   TuiIosAutofocusHandler,
   TuiSynchronousAutofocusHandler,
   tuiAutoFocusOptionsProvider
-} from "./chunk-ERLSLKKF.js";
+} from "./chunk-UIJ63FDF.js";
 import {
   TuiLet,
   TuiLetContext,
@@ -45,7 +45,7 @@ import {
   TuiPopoverDirective,
   TuiRepeatTimes,
   TuiRepeatTimesContext
-} from "./chunk-MRXIBML3.js";
+} from "./chunk-DCYODZBR.js";
 import {
   CHAR_BULLET,
   CHAR_CURRENCY_SIGN,
@@ -254,15 +254,15 @@ import {
   tuiZonefreeScheduler,
   tuiZonefull,
   tuiZonefullScheduler
-} from "./chunk-VAG3OFHX.js";
+} from "./chunk-4OMUCSCF.js";
+import "./chunk-IU2M26LM.js";
 import {
   ControlContainer,
   NgControl
-} from "./chunk-VQHASJ45.js";
-import "./chunk-O7P3HWDJ.js";
-import "./chunk-U32A7555.js";
-import "./chunk-AW4PJU6I.js";
-import "./chunk-OREPAVVY.js";
+} from "./chunk-HDXU2QND.js";
+import "./chunk-T32ZENQO.js";
+import "./chunk-55737RLF.js";
+import "./chunk-VFDX42D3.js";
 import {
   Directive,
   EventEmitter,
@@ -282,7 +282,7 @@ import {
   ɵɵlistener,
   ɵɵresolveDocument,
   ɵɵstyleProp
-} from "./chunk-H2EPMWCO.js";
+} from "./chunk-GJNOSL6X.js";
 import {
   EMPTY,
   Subject,
@@ -294,7 +294,8 @@ import {
   startWith,
   switchAll,
   switchMap
-} from "./chunk-2WRQ7LJK.js";
+} from "./chunk-YX5744VY.js";
+import "./chunk-QHQP2P2Z.js";
 
 // node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-directives-control.mjs
 var TuiNgControl = class _TuiNgControl {

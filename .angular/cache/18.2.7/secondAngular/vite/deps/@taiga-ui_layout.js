@@ -8,31 +8,27 @@ import {
   tuiBlockOptionsProvider,
   tuiSwitchOptionsProvider,
   tuiTabsOptionsProvider
-} from "./chunk-PWFNFRFA.js";
-import {
-  TuiExpand,
-  TuiExpandComponent
-} from "./chunk-J34JK4IF.js";
+} from "./chunk-HO5NDU3I.js";
 import {
   TUI_CHEVRON,
   TuiChevron
-} from "./chunk-WKDXQ2R3.js";
+} from "./chunk-E4A3HSIZ.js";
+import {
+  TuiExpand,
+  TuiExpandComponent
+} from "./chunk-G6KIPXXQ.js";
 import {
   TuiHintDirective,
   TuiTextfieldOptionsDirective,
   tuiHintOptionsProvider,
   tuiTextfieldOptionsProvider
-} from "./chunk-UK6SYIRF.js";
-import "./chunk-JWZEEKFC.js";
-import {
-  TuiItem
-} from "./chunk-77KMEMCQ.js";
-import "./chunk-BWOPU3XL.js";
+} from "./chunk-GTOOLSKA.js";
+import "./chunk-A4CNCZT4.js";
 import {
   RouterLink,
   RouterLinkActive
-} from "./chunk-J3ZGQDJ2.js";
-import "./chunk-AHOJEMF6.js";
+} from "./chunk-PTF5R27U.js";
+import "./chunk-6S6BGGGU.js";
 import {
   ResizeObserverService,
   TUI_ANIMATIONS_SPEED,
@@ -65,8 +61,12 @@ import {
   tuiDropdownOptionsProvider,
   tuiSlideInLeft,
   tuiToAnimationOptions
-} from "./chunk-VHZHJUUS.js";
-import "./chunk-5AHT5KTY.js";
+} from "./chunk-UVVLRUXO.js";
+import "./chunk-C47N4ZBO.js";
+import {
+  TuiItem
+} from "./chunk-TKEFBSRD.js";
+import "./chunk-EIH4H6ZQ.js";
 import {
   EMPTY_QUERY,
   PolymorpheusOutlet,
@@ -82,19 +82,19 @@ import {
   tuiQueryListChanges,
   tuiWithStyles,
   tuiZonefull
-} from "./chunk-VAG3OFHX.js";
+} from "./chunk-4OMUCSCF.js";
+import "./chunk-IU2M26LM.js";
 import {
   NgControl
-} from "./chunk-VQHASJ45.js";
-import "./chunk-O7P3HWDJ.js";
-import "./chunk-U32A7555.js";
-import "./chunk-AW4PJU6I.js";
+} from "./chunk-HDXU2QND.js";
+import "./chunk-T32ZENQO.js";
+import "./chunk-55737RLF.js";
 import {
   AsyncPipe,
   NgForOf,
   NgIf,
   NgTemplateOutlet
-} from "./chunk-OREPAVVY.js";
+} from "./chunk-VFDX42D3.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -146,15 +146,17 @@ import {
   ɵɵtemplate,
   ɵɵtemplateRefExtractor,
   ɵɵviewQuery
-} from "./chunk-H2EPMWCO.js";
+} from "./chunk-GJNOSL6X.js";
 import {
-  __spreadProps,
-  __spreadValues,
   distinctUntilChanged,
   map,
   merge,
   switchMap
-} from "./chunk-2WRQ7LJK.js";
+} from "./chunk-YX5744VY.js";
+import {
+  __spreadProps,
+  __spreadValues
+} from "./chunk-QHQP2P2Z.js";
 
 // node_modules/@taiga-ui/layout/fesm2022/taiga-ui-layout-components-app-bar.mjs
 var _c0 = ["side"];

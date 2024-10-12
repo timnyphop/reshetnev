@@ -17,13 +17,43 @@ import { HostelComponent } from './pages/hostel/hostel.component';
 export const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
-    children: [{ path: '', component: HomeComponent }],
+    loadComponent: () =>
+      import('./pages/home/home.component').then((m) => m.default),
+    children: [
+      {
+        path: '',
+        loadComponent: () =>
+          import('./pages/home/home.component').then((m) => m.default),
+      },
+      {
+        path: 'raiting',
+        loadComponent: () =>
+          import('./pages/raiting/raiting.component').then(
+            (m) => m.RaitingComponent,
+          ),
+      },
+    ],
   },
 
-  { path: 'auth', component: AuthComponent },
-  { path: 'raiting', component: RaitingComponent },
-  { path: 'college', component: CollegeComponent },
+  {
+    path: 'auth',
+    loadComponent: () =>
+      import('./pages/auth/auth.component').then((m) => m.AuthComponent),
+  },
+  {
+    path: 'raiting',
+    loadComponent: () =>
+      import('./pages/raiting/raiting.component').then(
+        (m) => m.RaitingComponent,
+      ),
+  },
+  {
+    path: 'college',
+    loadComponent: () =>
+      import('./pages/college/college.component').then(
+        (m) => m.CollegeComponent,
+      ),
+  },
   { path: 'balakvariat', component: BaklavariatComponent },
   { path: 'magistratura', component: MagistraturaComponent },
   { path: 'aspirantura', component: AspiranturaComponent },
