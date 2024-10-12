@@ -1,4 +1,9 @@
 import {
+  TuiLet,
+  TuiMapperPipe,
+  TuiRepeatTimes
+} from "./chunk-DCYODZBR.js";
+import {
   TUI_ASSETS_PATH,
   TUI_DAY_TYPE_HANDLER,
   TUI_FIRST_DAY_OF_WEEK,
@@ -16,20 +21,7 @@ import {
   tuiAppearanceOptionsProvider,
   tuiFormatNumber,
   tuiStringHashToHsl
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-2JTTTJFO.js
-} from "./chunk-UVVLRUXO.js";
-========
-} from "./chunk-2W6O635T.js";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-Q3NJJNIK.js
-import {
-  TuiLet,
-  TuiMapperPipe,
-  TuiRepeatTimes
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-2JTTTJFO.js
-} from "./chunk-DCYODZBR.js";
-========
-} from "./chunk-QFLPP4CH.js";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-Q3NJJNIK.js
+} from "./chunk-2RD7LTBS.js";
 import {
   DAYS_IN_WEEK,
   MAX_YEAR,
@@ -51,11 +43,7 @@ import {
   tuiProvideOptions,
   tuiPure,
   tuiWithStyles
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-2JTTTJFO.js
 } from "./chunk-4OMUCSCF.js";
-========
-} from "./chunk-MIOTRVVA.js";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-Q3NJJNIK.js
 import {
   AsyncPipe,
   CommonModule,
@@ -118,105 +106,6 @@ import {
   __spreadProps,
   __spreadValues
 } from "./chunk-QHQP2P2Z.js";
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-2JTTTJFO.js
-========
-
-// node_modules/@taiga-ui/core/fesm2022/taiga-ui-core-components-link.mjs
-var TUI_LINK_DEFAULT_OPTIONS = {
-  appearance: "link",
-  pseudo: false
-};
-var TUI_LINK_OPTIONS = tuiCreateToken(TUI_LINK_DEFAULT_OPTIONS);
-function tuiLinkOptionsProvider(options) {
-  return tuiProvideOptions(TUI_LINK_OPTIONS, options, TUI_LINK_DEFAULT_OPTIONS);
-}
-var TuiLinkStyles = class _TuiLinkStyles {
-  static {
-    this.ɵfac = function TuiLinkStyles_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _TuiLinkStyles)();
-    };
-  }
-  static {
-    this.ɵcmp = ɵɵdefineComponent({
-      type: _TuiLinkStyles,
-      selectors: [["ng-component"]],
-      hostAttrs: [1, "tui-link"],
-      standalone: true,
-      features: [ɵɵStandaloneFeature],
-      decls: 0,
-      vars: 0,
-      template: function TuiLinkStyles_Template(rf, ctx) {
-      },
-      styles: ['[tuiLink]{--tui-text-tertiary: var(--tui-text-secondary);padding:0;background:transparent;border:none;cursor:pointer;font:inherit;color:inherit;-webkit-text-decoration:none dashed currentColor;text-decoration:none dashed currentColor;text-underline-offset:.2em;text-decoration-thickness:.7px;text-decoration-color:color-mix(in lch,currentColor,transparent)}[tuiLink]:hover{--tui-text-secondary: var(--tui-text-primary)}[tuiLink]:before{margin-inline-end:.25rem}[tuiLink]:after{margin-inline-start:.25rem}[tuiLink][tuiIcons]:before,[tuiLink][tuiIcons]:after{content:"\\2060";padding:calc(var(--tui-icon-size, 1rem) / 2);vertical-align:super;font-size:0;line-height:0;box-sizing:border-box}[tuiLink]:focus-visible:not([data-focus=false]){outline:none;background:var(--tui-service-selection-background);background:color-mix(in lch,currentColor 12%,transparent)}[tuiLink][data-focus=true]{outline:none;background:var(--tui-service-selection-background);background:color-mix(in lch,currentColor 12%,transparent)}\n'],
-      encapsulation: 2,
-      changeDetection: 0
-    });
-  }
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TuiLinkStyles, [{
-    type: Component,
-    args: [{
-      standalone: true,
-      template: "",
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      host: {
-        class: "tui-link"
-      },
-      styles: ['[tuiLink]{--tui-text-tertiary: var(--tui-text-secondary);padding:0;background:transparent;border:none;cursor:pointer;font:inherit;color:inherit;-webkit-text-decoration:none dashed currentColor;text-decoration:none dashed currentColor;text-underline-offset:.2em;text-decoration-thickness:.7px;text-decoration-color:color-mix(in lch,currentColor,transparent)}[tuiLink]:hover{--tui-text-secondary: var(--tui-text-primary)}[tuiLink]:before{margin-inline-end:.25rem}[tuiLink]:after{margin-inline-start:.25rem}[tuiLink][tuiIcons]:before,[tuiLink][tuiIcons]:after{content:"\\2060";padding:calc(var(--tui-icon-size, 1rem) / 2);vertical-align:super;font-size:0;line-height:0;box-sizing:border-box}[tuiLink]:focus-visible:not([data-focus=false]){outline:none;background:var(--tui-service-selection-background);background:color-mix(in lch,currentColor 12%,transparent)}[tuiLink][data-focus=true]{outline:none;background:var(--tui-service-selection-background);background:color-mix(in lch,currentColor 12%,transparent)}\n']
-    }]
-  }], null, null);
-})();
-var TuiLink = class _TuiLink {
-  constructor() {
-    this.nothing = tuiWithStyles(TuiLinkStyles);
-    this.pseudo = inject(TUI_LINK_OPTIONS).pseudo;
-  }
-  static {
-    this.ɵfac = function TuiLink_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _TuiLink)();
-    };
-  }
-  static {
-    this.ɵdir = ɵɵdefineDirective({
-      type: _TuiLink,
-      selectors: [["a", "tuiLink", ""], ["button", "tuiLink", ""]],
-      hostAttrs: ["tuiLink", ""],
-      hostVars: 2,
-      hostBindings: function TuiLink_HostBindings(rf, ctx) {
-        if (rf & 2) {
-          ɵɵstyleProp("text-decoration-line", ctx.pseudo ? "underline" : null);
-        }
-      },
-      inputs: {
-        pseudo: "pseudo"
-      },
-      standalone: true,
-      features: [ɵɵProvidersFeature([tuiAppearanceOptionsProvider(TUI_LINK_OPTIONS)]), ɵɵHostDirectivesFeature([TuiWithAppearance, TuiWithIcons])]
-    });
-  }
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TuiLink, [{
-    type: Directive,
-    args: [{
-      standalone: true,
-      selector: "a[tuiLink], button[tuiLink]",
-      providers: [tuiAppearanceOptionsProvider(TUI_LINK_OPTIONS)],
-      hostDirectives: [TuiWithAppearance, TuiWithIcons],
-      host: {
-        tuiLink: "",
-        "[style.text-decoration-line]": 'pseudo ? "underline" : null'
-      }
-    }]
-  }], null, {
-    pseudo: [{
-      type: Input
-    }]
-  });
-})();
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-Q3NJJNIK.js
 
 // node_modules/@taiga-ui/core/fesm2022/taiga-ui-core-pipes-auto-color.mjs
 var TuiAutoColorPipe = class _TuiAutoColorPipe {
@@ -576,6 +465,102 @@ var TuiOrderWeekDaysPipe = class _TuiOrderWeekDaysPipe {
       name: "tuiOrderWeekDays"
     }]
   }], null, null);
+})();
+
+// node_modules/@taiga-ui/core/fesm2022/taiga-ui-core-components-link.mjs
+var TUI_LINK_DEFAULT_OPTIONS = {
+  appearance: "link",
+  pseudo: false
+};
+var TUI_LINK_OPTIONS = tuiCreateToken(TUI_LINK_DEFAULT_OPTIONS);
+function tuiLinkOptionsProvider(options) {
+  return tuiProvideOptions(TUI_LINK_OPTIONS, options, TUI_LINK_DEFAULT_OPTIONS);
+}
+var TuiLinkStyles = class _TuiLinkStyles {
+  static {
+    this.ɵfac = function TuiLinkStyles_Factory(__ngFactoryType__) {
+      return new (__ngFactoryType__ || _TuiLinkStyles)();
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _TuiLinkStyles,
+      selectors: [["ng-component"]],
+      hostAttrs: [1, "tui-link"],
+      standalone: true,
+      features: [ɵɵStandaloneFeature],
+      decls: 0,
+      vars: 0,
+      template: function TuiLinkStyles_Template(rf, ctx) {
+      },
+      styles: ['[tuiLink]{--tui-text-tertiary: var(--tui-text-secondary);padding:0;background:transparent;border:none;cursor:pointer;font:inherit;color:inherit;-webkit-text-decoration:none dashed currentColor;text-decoration:none dashed currentColor;text-underline-offset:.2em;text-decoration-thickness:.7px;text-decoration-color:color-mix(in lch,currentColor,transparent)}[tuiLink]:hover{--tui-text-secondary: var(--tui-text-primary)}[tuiLink]:before{margin-inline-end:.25rem}[tuiLink]:after{margin-inline-start:.25rem}[tuiLink][tuiIcons]:before,[tuiLink][tuiIcons]:after{content:"\\2060";padding:calc(var(--tui-icon-size, 1rem) / 2);vertical-align:super;font-size:0;line-height:0;box-sizing:border-box}[tuiLink]:focus-visible:not([data-focus=false]){outline:none;background:var(--tui-service-selection-background);background:color-mix(in lch,currentColor 12%,transparent)}[tuiLink][data-focus=true]{outline:none;background:var(--tui-service-selection-background);background:color-mix(in lch,currentColor 12%,transparent)}\n'],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TuiLinkStyles, [{
+    type: Component,
+    args: [{
+      standalone: true,
+      template: "",
+      encapsulation: ViewEncapsulation$1.None,
+      changeDetection: ChangeDetectionStrategy.OnPush,
+      host: {
+        class: "tui-link"
+      },
+      styles: ['[tuiLink]{--tui-text-tertiary: var(--tui-text-secondary);padding:0;background:transparent;border:none;cursor:pointer;font:inherit;color:inherit;-webkit-text-decoration:none dashed currentColor;text-decoration:none dashed currentColor;text-underline-offset:.2em;text-decoration-thickness:.7px;text-decoration-color:color-mix(in lch,currentColor,transparent)}[tuiLink]:hover{--tui-text-secondary: var(--tui-text-primary)}[tuiLink]:before{margin-inline-end:.25rem}[tuiLink]:after{margin-inline-start:.25rem}[tuiLink][tuiIcons]:before,[tuiLink][tuiIcons]:after{content:"\\2060";padding:calc(var(--tui-icon-size, 1rem) / 2);vertical-align:super;font-size:0;line-height:0;box-sizing:border-box}[tuiLink]:focus-visible:not([data-focus=false]){outline:none;background:var(--tui-service-selection-background);background:color-mix(in lch,currentColor 12%,transparent)}[tuiLink][data-focus=true]{outline:none;background:var(--tui-service-selection-background);background:color-mix(in lch,currentColor 12%,transparent)}\n']
+    }]
+  }], null, null);
+})();
+var TuiLink = class _TuiLink {
+  constructor() {
+    this.nothing = tuiWithStyles(TuiLinkStyles);
+    this.pseudo = inject(TUI_LINK_OPTIONS).pseudo;
+  }
+  static {
+    this.ɵfac = function TuiLink_Factory(__ngFactoryType__) {
+      return new (__ngFactoryType__ || _TuiLink)();
+    };
+  }
+  static {
+    this.ɵdir = ɵɵdefineDirective({
+      type: _TuiLink,
+      selectors: [["a", "tuiLink", ""], ["button", "tuiLink", ""]],
+      hostAttrs: ["tuiLink", ""],
+      hostVars: 2,
+      hostBindings: function TuiLink_HostBindings(rf, ctx) {
+        if (rf & 2) {
+          ɵɵstyleProp("text-decoration-line", ctx.pseudo ? "underline" : null);
+        }
+      },
+      inputs: {
+        pseudo: "pseudo"
+      },
+      standalone: true,
+      features: [ɵɵProvidersFeature([tuiAppearanceOptionsProvider(TUI_LINK_OPTIONS)]), ɵɵHostDirectivesFeature([TuiWithAppearance, TuiWithIcons])]
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TuiLink, [{
+    type: Directive,
+    args: [{
+      standalone: true,
+      selector: "a[tuiLink], button[tuiLink]",
+      providers: [tuiAppearanceOptionsProvider(TUI_LINK_OPTIONS)],
+      hostDirectives: [TuiWithAppearance, TuiWithIcons],
+      host: {
+        tuiLink: "",
+        "[style.text-decoration-line]": 'pseudo ? "underline" : null'
+      }
+    }]
+  }], null, {
+    pseudo: [{
+      type: Input
+    }]
+  });
 })();
 
 // node_modules/@taiga-ui/core/fesm2022/taiga-ui-core-components-spin-button.mjs
@@ -1680,10 +1665,6 @@ var TuiCalendar = class _TuiCalendar {
 })();
 
 export {
-  TUI_LINK_DEFAULT_OPTIONS,
-  TUI_LINK_OPTIONS,
-  tuiLinkOptionsProvider,
-  TuiLink,
   TuiAutoColorPipe,
   TuiCalendarSheetPipe,
   TuiFallbackSrcPipe,
@@ -1693,14 +1674,14 @@ export {
   TuiInitialsPipe,
   TuiMonthPipe,
   TuiOrderWeekDaysPipe,
+  TUI_LINK_DEFAULT_OPTIONS,
+  TUI_LINK_OPTIONS,
+  tuiLinkOptionsProvider,
+  TuiLink,
   TuiSpinButton,
   TuiCalendarSheet,
   TuiCalendarSpin,
   TuiCalendarYear,
   TuiCalendar
 };
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-2JTTTJFO.js
-//# sourceMappingURL=chunk-2JTTTJFO.js.map
-========
-//# sourceMappingURL=chunk-Q3NJJNIK.js.map
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-Q3NJJNIK.js
+//# sourceMappingURL=chunk-7EZQBND7.js.map

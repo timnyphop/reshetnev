@@ -1,54 +1,28 @@
 import {
+  TuiPlatform
+} from "./chunk-2JBT7KQ6.js";
+import {
   TUI_ZOOM_OPTIONS,
   TuiPan,
   TuiPanService,
   TuiValidator,
   TuiZoom,
   TuiZoomService
-<<<<<<< HEAD
 } from "./chunk-SZ4YKJTK.js";
-import {
-  TuiItem
-} from "./chunk-TKEFBSRD.js";
 import {
   TuiElement
 } from "./chunk-KEI7LUSK.js";
-import {
-  TuiPlatform
-} from "./chunk-2JBT7KQ6.js";
 import {
   TuiNativeValidator
 } from "./chunk-EIH4H6ZQ.js";
 import {
   TuiClickOutside
 } from "./chunk-XF2WWPZT.js";
-=======
-} from "./chunk-ZQELOQAO.js";
-import {
-  TuiElement
-} from "./chunk-G5XZPHSE.js";
-import {
-  TuiClickOutside
-} from "./chunk-NNRYOBYZ.js";
->>>>>>> 5564dde0 (lonic rebag)
 import {
   TUI_SWIPE_OPTIONS,
   TuiSwipe,
   TuiSwipeService
-<<<<<<< HEAD
 } from "./chunk-A6ORIRYP.js";
-=======
-} from "./chunk-O7WDIQXV.js";
-import {
-  TuiItem
-} from "./chunk-TKEFBSRD.js";
-import {
-  TuiPlatform
-} from "./chunk-77IFY2BZ.js";
-import {
-  TuiNativeValidator
-} from "./chunk-Y5XQTGPH.js";
->>>>>>> 5564dde0 (lonic rebag)
 import {
   AbstractTuiAutofocusHandler,
   TUI_AUTOFOCUS_HANDLER,
@@ -60,11 +34,7 @@ import {
   TuiIosAutofocusHandler,
   TuiSynchronousAutofocusHandler,
   tuiAutoFocusOptionsProvider
-<<<<<<< HEAD
 } from "./chunk-UIJ63FDF.js";
-=======
-} from "./chunk-6AG66UOH.js";
->>>>>>> 5564dde0 (lonic rebag)
 import {
   TuiLet,
   TuiLetContext,
@@ -72,11 +42,7 @@ import {
   TuiPopoverDirective,
   TuiRepeatTimes,
   TuiRepeatTimesContext
-<<<<<<< HEAD
 } from "./chunk-DCYODZBR.js";
-=======
-} from "./chunk-QFLPP4CH.js";
->>>>>>> 5564dde0 (lonic rebag)
 import {
   CHAR_BULLET,
   CHAR_CURRENCY_SIGN,
@@ -285,23 +251,18 @@ import {
   tuiZonefreeScheduler,
   tuiZonefull,
   tuiZonefullScheduler
-<<<<<<< HEAD
 } from "./chunk-4OMUCSCF.js";
 import "./chunk-IU2M26LM.js";
-=======
-} from "./chunk-MIOTRVVA.js";
->>>>>>> 5564dde0 (lonic rebag)
 import {
   ControlContainer,
   NgControl
 } from "./chunk-HDXU2QND.js";
-<<<<<<< HEAD
-=======
-import "./chunk-IU2M26LM.js";
->>>>>>> 5564dde0 (lonic rebag)
 import "./chunk-T32ZENQO.js";
 import "./chunk-55737RLF.js";
 import "./chunk-VFDX42D3.js";
+import {
+  TuiItem
+} from "./chunk-TKEFBSRD.js";
 import {
   Directive,
   EventEmitter,

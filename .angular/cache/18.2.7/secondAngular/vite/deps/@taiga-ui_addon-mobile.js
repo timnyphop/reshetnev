@@ -1,65 +1,45 @@
 import {
-<<<<<<< HEAD
+  TuiClickOutside
+} from "./chunk-XF2WWPZT.js";
+import {
+  TuiSwipe
+} from "./chunk-A6ORIRYP.js";
+import {
+  TUI_DIALOGS
+} from "./chunk-JMKPMAPO.js";
+import "./chunk-UIJ63FDF.js";
+import {
   WaIntersectionObservee,
   WaIntersectionObserver,
   WaIntersectionObserverDirective
 } from "./chunk-A4CNCZT4.js";
 import {
-  RouterLinkActive
-} from "./chunk-PTF5R27U.js";
-import {
   TUI_DAY_CAPS_MAPPER,
   calculateDisabledItemHandler,
   tuiToggleDay
-} from "./chunk-FSN5HPJX.js";
-=======
-  TUI_DAY_CAPS_MAPPER,
-  calculateDisabledItemHandler,
-  tuiToggleDay
-} from "./chunk-TYV6JBDD.js";
-import {
-  WaIntersectionObservee,
-  WaIntersectionObserver,
-  WaIntersectionObserverDirective
-} from "./chunk-CUWVZFGG.js";
->>>>>>> 5564dde0 (lonic rebag)
-import {
-  TUI_CALENDAR_DATE_STREAM,
-  TUI_CANCEL_WORD,
-  TUI_CHOOSE_DAY_OR_RANGE_TEXTS,
-  TUI_DONE_WORD,
-  TUI_MOBILE_CALENDAR
-<<<<<<< HEAD
-} from "./chunk-6S6BGGGU.js";
-import {
-  TUI_DIALOGS
-} from "./chunk-DC7J66EL.js";
-=======
-} from "./chunk-ZMRNDIB7.js";
-import {
-  RouterLinkActive
-} from "./chunk-PTF5R27U.js";
-import {
-  TuiClickOutside
-} from "./chunk-NNRYOBYZ.js";
-import {
-  TuiSwipe
-} from "./chunk-O7WDIQXV.js";
-import {
-  TUI_DIALOGS
-} from "./chunk-ERPGDW2S.js";
->>>>>>> 5564dde0 (lonic rebag)
+} from "./chunk-6ODR2XOD.js";
 import {
   TuiCalendarSheet,
   TuiCalendarSheetPipe,
   TuiLink,
   TuiMonthPipe,
   TuiOrderWeekDaysPipe
-<<<<<<< HEAD
-} from "./chunk-2JTTTJFO.js";
-=======
-} from "./chunk-Q3NJJNIK.js";
->>>>>>> 5564dde0 (lonic rebag)
+} from "./chunk-7EZQBND7.js";
+import {
+  TuiLet,
+  TuiMapperPipe,
+  TuiPopoverDirective,
+  TuiRepeatTimes,
+  coerceElement,
+  coerceNumberProperty
+} from "./chunk-DCYODZBR.js";
+import {
+  TUI_CALENDAR_DATE_STREAM,
+  TUI_CANCEL_WORD,
+  TUI_CHOOSE_DAY_OR_RANGE_TEXTS,
+  TUI_DONE_WORD,
+  TUI_MOBILE_CALENDAR
+} from "./chunk-BSGWPMIM.js";
 import {
   SCROLL_REF_SELECTOR,
   TUI_ANIMATIONS_SPEED,
@@ -80,37 +60,7 @@ import {
   tuiSlideIn,
   tuiSlideInTop,
   tuiToAnimationOptions
-<<<<<<< HEAD
-} from "./chunk-UVVLRUXO.js";
-import {
-  shouldCall
-} from "./chunk-C47N4ZBO.js";
-import {
-  TuiClickOutside
-} from "./chunk-XF2WWPZT.js";
-import {
-  TuiSwipe
-} from "./chunk-A6ORIRYP.js";
-import "./chunk-UIJ63FDF.js";
-=======
-} from "./chunk-2W6O635T.js";
-import {
-  shouldCall
-} from "./chunk-C47N4ZBO.js";
-import "./chunk-6AG66UOH.js";
->>>>>>> 5564dde0 (lonic rebag)
-import {
-  TuiLet,
-  TuiMapperPipe,
-  TuiPopoverDirective,
-  TuiRepeatTimes,
-  coerceElement,
-  coerceNumberProperty
-<<<<<<< HEAD
-} from "./chunk-DCYODZBR.js";
-=======
-} from "./chunk-QFLPP4CH.js";
->>>>>>> 5564dde0 (lonic rebag)
+} from "./chunk-2RD7LTBS.js";
 import {
   EMPTY_QUERY,
   MONTHS_IN_YEAR,
@@ -150,15 +100,15 @@ import {
   tuiWithStyles,
   tuiZonefree,
   tuiZonefreeScheduler
-<<<<<<< HEAD
 } from "./chunk-4OMUCSCF.js";
+import {
+  shouldCall
+} from "./chunk-C47N4ZBO.js";
 import "./chunk-IU2M26LM.js";
 import "./chunk-HDXU2QND.js";
-=======
-} from "./chunk-MIOTRVVA.js";
-import "./chunk-HDXU2QND.js";
-import "./chunk-IU2M26LM.js";
->>>>>>> 5564dde0 (lonic rebag)
+import {
+  RouterLinkActive
+} from "./chunk-PTF5R27U.js";
 import "./chunk-T32ZENQO.js";
 import "./chunk-55737RLF.js";
 import {

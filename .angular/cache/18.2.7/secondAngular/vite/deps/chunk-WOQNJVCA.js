@@ -1,26 +1,6 @@
 import {
   TuiChevron
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-HO5NDU3I.js
-} from "./chunk-E4A3HSIZ.js";
-========
-} from "./chunk-JPQ4KS2K.js";
-import {
-  IntersectionObserverService
-} from "./chunk-CUWVZFGG.js";
-import {
-  MASKITO_DEFAULT_OPTIONS,
-  TUI_COPY_TEXTS,
-  TUI_MORE_WORD,
-  TUI_PASSWORD_TEXTS,
-  maskitoTransform
-} from "./chunk-ZMRNDIB7.js";
-import {
-  RouterLinkActive
-} from "./chunk-PTF5R27U.js";
-import {
-  TuiItem
-} from "./chunk-TKEFBSRD.js";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-JRT3VCIB.js
+} from "./chunk-QWIMJNGL.js";
 import {
   TUI_HINT_OPTIONS,
   TuiHintDescribe,
@@ -28,24 +8,20 @@ import {
   TuiHintHover,
   TuiTextfieldComponent,
   TuiWithTextfieldDropdown
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-HO5NDU3I.js
-} from "./chunk-GTOOLSKA.js";
+} from "./chunk-JSTJRJLM.js";
+import {
+  TuiNativeValidator
+} from "./chunk-EIH4H6ZQ.js";
 import {
   IntersectionObserverService
 } from "./chunk-A4CNCZT4.js";
-import {
-  RouterLinkActive
-} from "./chunk-PTF5R27U.js";
 import {
   MASKITO_DEFAULT_OPTIONS,
   TUI_COPY_TEXTS,
   TUI_MORE_WORD,
   TUI_PASSWORD_TEXTS,
   maskitoTransform
-} from "./chunk-6S6BGGGU.js";
-========
-} from "./chunk-YBEYUEVO.js";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-JRT3VCIB.js
+} from "./chunk-BSGWPMIM.js";
 import {
   ResizeObserverService,
   TUI_ANIMATIONS_DEFAULT_DURATION,
@@ -71,20 +47,7 @@ import {
   tuiInjectIconResolver,
   tuiPop,
   tuiToAnimationOptions
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-HO5NDU3I.js
-} from "./chunk-UVVLRUXO.js";
-import {
-  TuiItem
-} from "./chunk-TKEFBSRD.js";
-import {
-  TuiNativeValidator
-} from "./chunk-EIH4H6ZQ.js";
-========
-} from "./chunk-2W6O635T.js";
-import {
-  TuiNativeValidator
-} from "./chunk-Y5XQTGPH.js";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-JRT3VCIB.js
+} from "./chunk-2RD7LTBS.js";
 import {
   CHAR_NO_BREAK_SPACE,
   EMPTY_QUERY,
@@ -119,15 +82,14 @@ import {
   tuiWithStyles,
   tuiZonefree,
   tuiZonefull
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-HO5NDU3I.js
 } from "./chunk-4OMUCSCF.js";
-========
-} from "./chunk-MIOTRVVA.js";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-JRT3VCIB.js
 import {
   NG_VALIDATORS,
   NgControl
 } from "./chunk-HDXU2QND.js";
+import {
+  RouterLinkActive
+} from "./chunk-PTF5R27U.js";
 import {
   AsyncPipe,
   CommonModule,
@@ -140,6 +102,9 @@ import {
   NgTemplateOutlet,
   isPlatformServer
 } from "./chunk-VFDX42D3.js";
+import {
+  TuiItem
+} from "./chunk-TKEFBSRD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -233,296 +198,6 @@ import {
   tap,
   timer
 } from "./chunk-YX5744VY.js";
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-HO5NDU3I.js
-
-// node_modules/@ng-web-apis/mutation-observer/fesm2022/ng-web-apis-mutation-observer.mjs
-var SafeObserver = typeof MutationObserver !== "undefined" ? MutationObserver : class {
-  observe() {
-  }
-  disconnect() {
-  }
-  takeRecords() {
-    return [];
-  }
-};
-var WA_MUTATION_OBSERVER_INIT = new InjectionToken("[WA_MUTATION_OBSERVER_INIT]");
-var MUTATION_OBSERVER_INIT = WA_MUTATION_OBSERVER_INIT;
-function booleanAttribute(element, attribute) {
-  return element.getAttribute(attribute) !== null || void 0;
-}
-function mutationObserverInitFactory() {
-  const {
-    nativeElement
-  } = inject(ElementRef);
-  const attributeFilter = nativeElement.getAttribute("attributeFilter");
-  return {
-    attributeFilter: attributeFilter?.split(",").map((attr) => attr.trim()),
-    attributeOldValue: booleanAttribute(nativeElement, "attributeOldValue"),
-    attributes: booleanAttribute(nativeElement, "attributes"),
-    characterData: booleanAttribute(nativeElement, "characterData"),
-    characterDataOldValue: booleanAttribute(nativeElement, "characterDataOldValue"),
-    childList: booleanAttribute(nativeElement, "childList"),
-    subtree: booleanAttribute(nativeElement, "subtree")
-  };
-}
-var WaMutationObserver = class _WaMutationObserver extends SafeObserver {
-  nativeElement = inject(ElementRef).nativeElement;
-  config = inject(MUTATION_OBSERVER_INIT);
-  attributeFilter = "";
-  attributeOldValue = "";
-  attributes = "";
-  characterData = "";
-  characterDataOldValue = "";
-  childList = "";
-  subtree = "";
-  waMutationObserver = new EventEmitter();
-  constructor() {
-    super((records) => {
-      this.waMutationObserver.emit(records);
-    });
-    this.observe(this.nativeElement, this.config);
-  }
-  ngOnDestroy() {
-    this.disconnect();
-  }
-  static ɵfac = function WaMutationObserver_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _WaMutationObserver)();
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _WaMutationObserver,
-    selectors: [["", "waMutationObserver", ""]],
-    inputs: {
-      attributeFilter: "attributeFilter",
-      attributeOldValue: "attributeOldValue",
-      attributes: "attributes",
-      characterData: "characterData",
-      characterDataOldValue: "characterDataOldValue",
-      childList: "childList",
-      subtree: "subtree"
-    },
-    outputs: {
-      waMutationObserver: "waMutationObserver"
-    },
-    exportAs: ["MutationObserver"],
-    standalone: true,
-    features: [ɵɵProvidersFeature([{
-      provide: MUTATION_OBSERVER_INIT,
-      useFactory: mutationObserverInitFactory
-    }]), ɵɵInheritDefinitionFeature]
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(WaMutationObserver, [{
-    type: Directive,
-    args: [{
-      standalone: true,
-      selector: "[waMutationObserver]",
-      providers: [{
-        provide: MUTATION_OBSERVER_INIT,
-        useFactory: mutationObserverInitFactory
-      }],
-      exportAs: "MutationObserver"
-    }]
-  }], function() {
-    return [];
-  }, {
-    attributeFilter: [{
-      type: Input
-    }],
-    attributeOldValue: [{
-      type: Input
-    }],
-    attributes: [{
-      type: Input
-    }],
-    characterData: [{
-      type: Input
-    }],
-    characterDataOldValue: [{
-      type: Input
-    }],
-    childList: [{
-      type: Input
-    }],
-    subtree: [{
-      type: Input
-    }],
-    waMutationObserver: [{
-      type: Output
-    }]
-  });
-})();
-var MutationObserverService = class _MutationObserverService extends Observable {
-  constructor() {
-    const nativeElement = inject(ElementRef).nativeElement;
-    const config = inject(MUTATION_OBSERVER_INIT);
-    super((subscriber) => {
-      const observer = new SafeObserver((records) => {
-        subscriber.next(records);
-      });
-      observer.observe(nativeElement, config);
-      return () => {
-        observer.disconnect();
-      };
-    });
-  }
-  static ɵfac = function MutationObserverService_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MutationObserverService)();
-  };
-  static ɵprov = ɵɵdefineInjectable({
-    token: _MutationObserverService,
-    factory: _MutationObserverService.ɵfac
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MutationObserverService, [{
-    type: Injectable
-  }], function() {
-    return [];
-  }, null);
-})();
-
-// node_modules/@taiga-ui/kit/fesm2022/taiga-ui-kit-directives-fade.mjs
-var BUFFER = 1;
-var TuiFadeStyles = class _TuiFadeStyles {
-  static {
-    this.ɵfac = function TuiFadeStyles_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _TuiFadeStyles)();
-    };
-  }
-  static {
-    this.ɵcmp = ɵɵdefineComponent({
-      type: _TuiFadeStyles,
-      selectors: [["ng-component"]],
-      hostAttrs: [1, "tui-fade-styles"],
-      standalone: true,
-      features: [ɵɵStandaloneFeature],
-      decls: 0,
-      vars: 0,
-      template: function TuiFadeStyles_Template(rf, ctx) {
-      },
-      styles: ["[tuiFade]{scrollbar-width:none;-ms-overflow-style:none;transition-property:-webkit-mask-position;transition-property:mask-position;transition-property:mask-position,-webkit-mask-position;transition-duration:var(--tui-duration, .3s);transition-timing-function:ease-in-out;overflow:auto;text-overflow:unset!important;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}[tuiFade]::-webkit-scrollbar,[tuiFade]::-webkit-scrollbar-thumb{display:none}[tuiFade]:not([data-orientation=vertical]){overflow-y:hidden;-webkit-mask-image:linear-gradient(to right,transparent var(--fade-offset),#000 calc(var(--fade-size) + var(--fade-offset))),linear-gradient(to left,transparent var(--fade-offset),#000 calc(var(--fade-size) + var(--fade-offset))),linear-gradient(#000,#000);mask-image:linear-gradient(to right,transparent var(--fade-offset),#000 calc(var(--fade-size) + var(--fade-offset))),linear-gradient(to left,transparent var(--fade-offset),#000 calc(var(--fade-size) + var(--fade-offset))),linear-gradient(#000,#000);-webkit-mask-position:calc(-1 * var(--fade-size) - var(--fade-offset)) bottom,calc(100% + var(--fade-size) + var(--fade-offset)) bottom,top;mask-position:calc(-1 * var(--fade-size) - var(--fade-offset)) bottom,calc(100% + var(--fade-size) + var(--fade-offset)) bottom,top;-webkit-mask-size:calc(51% + var(--fade-size) + var(--fade-offset)) var(--line-height, 100%),calc(50% + var(--fade-size) + var(--fade-offset)) var(--line-height, 100%),100% calc(100% - var(--line-height, 100%));mask-size:calc(51% + var(--fade-size) + var(--fade-offset)) var(--line-height, 100%),calc(50% + var(--fade-size) + var(--fade-offset)) var(--line-height, 100%),100% calc(100% - var(--line-height, 100%))}[tuiFade]:not([data-orientation=vertical])._start{-webkit-mask-position:left bottom,calc(100% + var(--fade-size) + var(--fade-offset)) bottom,top;mask-position:left bottom,calc(100% + var(--fade-size) + var(--fade-offset)) bottom,top}[tuiFade]:not([data-orientation=vertical])._end{-webkit-mask-position:calc(-1 * var(--fade-size) - var(--fade-offset)) bottom,right bottom,top;mask-position:calc(-1 * var(--fade-size) - var(--fade-offset)) bottom,right bottom,top}[tuiFade]:not([data-orientation=vertical])._start._end{-webkit-mask-position:left bottom,right bottom,top;mask-position:left bottom,right bottom,top}[tuiFade][data-orientation=vertical]{overflow-x:hidden;-webkit-mask-image:linear-gradient(to bottom,transparent var(--fade-offset),#000 calc(var(--fade-size) + var(--fade-offset))),linear-gradient(to top,transparent var(--fade-offset),#000 calc(var(--fade-size) + var(--fade-offset)));mask-image:linear-gradient(to bottom,transparent var(--fade-offset),#000 calc(var(--fade-size) + var(--fade-offset))),linear-gradient(to top,transparent var(--fade-offset),#000 calc(var(--fade-size) + var(--fade-offset)));-webkit-mask-position:left calc(-1 * var(--fade-size) - var(--fade-offset)),left calc(100% + var(--fade-size) + var(--fade-offset));mask-position:left calc(-1 * var(--fade-size) - var(--fade-offset)),left calc(100% + var(--fade-size) + var(--fade-offset));-webkit-mask-size:100% calc(51% + var(--fade-size) + var(--fade-offset));mask-size:100% calc(51% + var(--fade-size) + var(--fade-offset))}[tuiFade][data-orientation=vertical]._start{-webkit-mask-position:left top,left calc(100% + var(--fade-size) + var(--fade-offset));mask-position:left top,left calc(100% + var(--fade-size) + var(--fade-offset))}[tuiFade][data-orientation=vertical]._end{-webkit-mask-position:left calc(-1 * var(--fade-size) - var(--fade-offset)),left bottom;mask-position:left calc(-1 * var(--fade-size) - var(--fade-offset)),left bottom}[tuiFade][data-orientation=vertical]._start._end{-webkit-mask-position:left top,left bottom;mask-position:left top,left bottom}\n"],
-      encapsulation: 2,
-      changeDetection: 0
-    });
-  }
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TuiFadeStyles, [{
-    type: Component,
-    args: [{
-      standalone: true,
-      template: "",
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      host: {
-        class: "tui-fade-styles"
-      },
-      styles: ["[tuiFade]{scrollbar-width:none;-ms-overflow-style:none;transition-property:-webkit-mask-position;transition-property:mask-position;transition-property:mask-position,-webkit-mask-position;transition-duration:var(--tui-duration, .3s);transition-timing-function:ease-in-out;overflow:auto;text-overflow:unset!important;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}[tuiFade]::-webkit-scrollbar,[tuiFade]::-webkit-scrollbar-thumb{display:none}[tuiFade]:not([data-orientation=vertical]){overflow-y:hidden;-webkit-mask-image:linear-gradient(to right,transparent var(--fade-offset),#000 calc(var(--fade-size) + var(--fade-offset))),linear-gradient(to left,transparent var(--fade-offset),#000 calc(var(--fade-size) + var(--fade-offset))),linear-gradient(#000,#000);mask-image:linear-gradient(to right,transparent var(--fade-offset),#000 calc(var(--fade-size) + var(--fade-offset))),linear-gradient(to left,transparent var(--fade-offset),#000 calc(var(--fade-size) + var(--fade-offset))),linear-gradient(#000,#000);-webkit-mask-position:calc(-1 * var(--fade-size) - var(--fade-offset)) bottom,calc(100% + var(--fade-size) + var(--fade-offset)) bottom,top;mask-position:calc(-1 * var(--fade-size) - var(--fade-offset)) bottom,calc(100% + var(--fade-size) + var(--fade-offset)) bottom,top;-webkit-mask-size:calc(51% + var(--fade-size) + var(--fade-offset)) var(--line-height, 100%),calc(50% + var(--fade-size) + var(--fade-offset)) var(--line-height, 100%),100% calc(100% - var(--line-height, 100%));mask-size:calc(51% + var(--fade-size) + var(--fade-offset)) var(--line-height, 100%),calc(50% + var(--fade-size) + var(--fade-offset)) var(--line-height, 100%),100% calc(100% - var(--line-height, 100%))}[tuiFade]:not([data-orientation=vertical])._start{-webkit-mask-position:left bottom,calc(100% + var(--fade-size) + var(--fade-offset)) bottom,top;mask-position:left bottom,calc(100% + var(--fade-size) + var(--fade-offset)) bottom,top}[tuiFade]:not([data-orientation=vertical])._end{-webkit-mask-position:calc(-1 * var(--fade-size) - var(--fade-offset)) bottom,right bottom,top;mask-position:calc(-1 * var(--fade-size) - var(--fade-offset)) bottom,right bottom,top}[tuiFade]:not([data-orientation=vertical])._start._end{-webkit-mask-position:left bottom,right bottom,top;mask-position:left bottom,right bottom,top}[tuiFade][data-orientation=vertical]{overflow-x:hidden;-webkit-mask-image:linear-gradient(to bottom,transparent var(--fade-offset),#000 calc(var(--fade-size) + var(--fade-offset))),linear-gradient(to top,transparent var(--fade-offset),#000 calc(var(--fade-size) + var(--fade-offset)));mask-image:linear-gradient(to bottom,transparent var(--fade-offset),#000 calc(var(--fade-size) + var(--fade-offset))),linear-gradient(to top,transparent var(--fade-offset),#000 calc(var(--fade-size) + var(--fade-offset)));-webkit-mask-position:left calc(-1 * var(--fade-size) - var(--fade-offset)),left calc(100% + var(--fade-size) + var(--fade-offset));mask-position:left calc(-1 * var(--fade-size) - var(--fade-offset)),left calc(100% + var(--fade-size) + var(--fade-offset));-webkit-mask-size:100% calc(51% + var(--fade-size) + var(--fade-offset));mask-size:100% calc(51% + var(--fade-size) + var(--fade-offset))}[tuiFade][data-orientation=vertical]._start{-webkit-mask-position:left top,left calc(100% + var(--fade-size) + var(--fade-offset));mask-position:left top,left calc(100% + var(--fade-size) + var(--fade-offset))}[tuiFade][data-orientation=vertical]._end{-webkit-mask-position:left calc(-1 * var(--fade-size) - var(--fade-offset)),left bottom;mask-position:left calc(-1 * var(--fade-size) - var(--fade-offset)),left bottom}[tuiFade][data-orientation=vertical]._start._end{-webkit-mask-position:left top,left bottom;mask-position:left top,left bottom}\n"]
-    }]
-  }], null, null);
-})();
-var TuiFade = class _TuiFade {
-  constructor() {
-    this.lineHeight = null;
-    this.size = "1.5em";
-    this.offset = "0em";
-    this.orientation = "horizontal";
-    const el = tuiInjectElement();
-    tuiWithStyles(TuiFadeStyles);
-    merge(inject(ResizeObserverService, {
-      self: true
-    }), inject(MutationObserverService, {
-      self: true
-    }), fromEvent(el, "scroll")).pipe(tuiZonefree(), takeUntilDestroyed()).subscribe(() => {
-      el.classList.toggle("_start", !!el.scrollLeft || !!el.scrollTop);
-      el.classList.toggle("_end", this.isEnd(el));
-    });
-  }
-  isEnd(el) {
-    if (this.orientation === "vertical") {
-      return Math.round(el.scrollTop) < el.scrollHeight - el.clientHeight - BUFFER;
-    }
-    return Math.round(el.scrollLeft) < el.scrollWidth - el.clientWidth - BUFFER || // horizontal multiline fade can kick in early due to hanging elements of fonts so using bigger buffer
-    el.scrollHeight > el.clientHeight + 4 * BUFFER;
-  }
-  static {
-    this.ɵfac = function TuiFade_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _TuiFade)();
-    };
-  }
-  static {
-    this.ɵdir = ɵɵdefineDirective({
-      type: _TuiFade,
-      selectors: [["", "tuiFade", ""]],
-      hostVars: 9,
-      hostBindings: function TuiFade_HostBindings(rf, ctx) {
-        if (rf & 2) {
-          ɵɵattribute("data-orientation", ctx.orientation);
-          ɵɵstyleProp("line-height", ctx.lineHeight)("--line-height", ctx.lineHeight)("--fade-size", ctx.size)("--fade-offset", ctx.offset);
-        }
-      },
-      inputs: {
-        lineHeight: [0, "tuiFadeHeight", "lineHeight"],
-        size: [0, "tuiFadeSize", "size"],
-        offset: [0, "tuiFadeOffset", "offset"],
-        orientation: [0, "tuiFade", "orientation"]
-      },
-      standalone: true,
-      features: [ɵɵProvidersFeature([ResizeObserverService, MutationObserverService, {
-        provide: WA_MUTATION_OBSERVER_INIT,
-        useValue: {
-          characterData: true,
-          subtree: true
-        }
-      }])]
-    });
-  }
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TuiFade, [{
-    type: Directive,
-    args: [{
-      standalone: true,
-      selector: "[tuiFade]",
-      providers: [ResizeObserverService, MutationObserverService, {
-        provide: WA_MUTATION_OBSERVER_INIT,
-        useValue: {
-          characterData: true,
-          subtree: true
-        }
-      }],
-      host: {
-        "[style.line-height]": "lineHeight",
-        "[style.--line-height]": "lineHeight",
-        "[style.--fade-size]": "size",
-        "[style.--fade-offset]": "offset",
-        "[attr.data-orientation]": "orientation"
-      }
-    }]
-  }], function() {
-    return [];
-  }, {
-    lineHeight: [{
-      type: Input,
-      args: ["tuiFadeHeight"]
-    }],
-    size: [{
-      type: Input,
-      args: ["tuiFadeSize"]
-    }],
-    offset: [{
-      type: Input,
-      args: ["tuiFadeOffset"]
-    }],
-    orientation: [{
-      type: Input,
-      args: ["tuiFade"]
-    }]
-  });
-})();
-========
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-JRT3VCIB.js
 
 // node_modules/@taiga-ui/kit/fesm2022/taiga-ui-kit-directives-button-close.mjs
 var TuiButtonClose = class _TuiButtonClose {
@@ -4021,8 +3696,4 @@ export {
   TuiTabsWithMore,
   TuiTabs
 };
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-HO5NDU3I.js
-//# sourceMappingURL=chunk-HO5NDU3I.js.map
-========
-//# sourceMappingURL=chunk-JRT3VCIB.js.map
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-JRT3VCIB.js
+//# sourceMappingURL=chunk-WOQNJVCA.js.map

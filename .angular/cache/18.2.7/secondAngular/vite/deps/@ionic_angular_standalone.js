@@ -99,6 +99,10 @@ import {
   win
 } from "./chunk-ACUVEYEP.js";
 import {
+  NG_VALUE_ACCESSOR,
+  NgControl
+} from "./chunk-HDXU2QND.js";
+import {
   ActivatedRoute,
   ChildrenOutletContexts,
   NavigationStart,
@@ -107,10 +111,6 @@ import {
   RouterLink,
   UrlSerializer
 } from "./chunk-PTF5R27U.js";
-import {
-  NG_VALUE_ACCESSOR,
-  NgControl
-} from "./chunk-HDXU2QND.js";
 import "./chunk-T32ZENQO.js";
 import "./chunk-55737RLF.js";
 import {

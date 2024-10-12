@@ -1,10 +1,6 @@
 import {
   tuiInjectElement
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-KEI7LUSK.js
 } from "./chunk-4OMUCSCF.js";
-========
-} from "./chunk-MIOTRVVA.js";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-G5XZPHSE.js
 import {
   Directive,
   ElementRef,
@@ -48,8 +44,4 @@ var TuiElement = class _TuiElement {
 export {
   TuiElement
 };
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-KEI7LUSK.js
 //# sourceMappingURL=chunk-KEI7LUSK.js.map
-========
-//# sourceMappingURL=chunk-G5XZPHSE.js.map
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-G5XZPHSE.js

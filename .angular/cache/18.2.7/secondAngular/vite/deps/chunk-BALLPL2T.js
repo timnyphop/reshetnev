@@ -2,11 +2,7 @@ import {
   tuiCreateToken,
   tuiProvideOptions,
   tuiWithStyles
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-BALLPL2T.js
 } from "./chunk-4OMUCSCF.js";
-========
-} from "./chunk-MIOTRVVA.js";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-NKWLETPX.js
 import {
   ChangeDetectionStrategy,
   Component,
@@ -145,8 +141,4 @@ export {
   tuiGroupOptionsProvider,
   TuiGroup
 };
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-BALLPL2T.js
 //# sourceMappingURL=chunk-BALLPL2T.js.map
-========
-//# sourceMappingURL=chunk-NKWLETPX.js.map
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-NKWLETPX.js

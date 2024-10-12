@@ -1,10 +1,6 @@
 import {
   coerceBooleanProperty
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-UIJ63FDF.js
 } from "./chunk-DCYODZBR.js";
-========
-} from "./chunk-QFLPP4CH.js";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-6AG66UOH.js
 import {
   TUI_IS_IOS,
   WA_ANIMATION_FRAME,
@@ -21,11 +17,7 @@ import {
   tuiIsPresent,
   tuiPx,
   tuiZonefreeScheduler
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-UIJ63FDF.js
 } from "./chunk-4OMUCSCF.js";
-========
-} from "./chunk-MIOTRVVA.js";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-6AG66UOH.js
 import {
   DOCUMENT
 } from "./chunk-VFDX42D3.js";
@@ -349,8 +341,4 @@ export {
   TuiSynchronousAutofocusHandler,
   TuiFocusTrap
 };
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-UIJ63FDF.js
 //# sourceMappingURL=chunk-UIJ63FDF.js.map
-========
-//# sourceMappingURL=chunk-6AG66UOH.js.map
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-6AG66UOH.js

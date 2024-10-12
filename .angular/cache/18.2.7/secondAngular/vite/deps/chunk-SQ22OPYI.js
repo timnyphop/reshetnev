@@ -1,16 +1,9 @@
 import {
   TUI_NUMBER_FORMAT
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-EQEXY5AC.js
-} from "./chunk-UVVLRUXO.js";
+} from "./chunk-2RD7LTBS.js";
 import {
   tuiProvide
 } from "./chunk-4OMUCSCF.js";
-========
-} from "./chunk-2W6O635T.js";
-import {
-  tuiProvide
-} from "./chunk-MIOTRVVA.js";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-RVJVSLCE.js
 import {
   Directive,
   Input,
@@ -79,8 +72,4 @@ var TuiNumberFormat = class _TuiNumberFormat extends Observable {
 export {
   TuiNumberFormat
 };
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-EQEXY5AC.js
-//# sourceMappingURL=chunk-EQEXY5AC.js.map
-========
-//# sourceMappingURL=chunk-RVJVSLCE.js.map
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-RVJVSLCE.js
+//# sourceMappingURL=chunk-SQ22OPYI.js.map

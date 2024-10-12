@@ -1,4 +1,7 @@
 import {
+  TuiNumberFormat
+} from "./chunk-SQ22OPYI.js";
+import {
   TUI_FLOATING_PRECISION,
   TuiCalendarMonth,
   TuiCheckbox,
@@ -21,17 +24,14 @@ import {
   maskitoPrefixPostprocessorGenerator,
   maskitoTimeOptionsGenerator,
   tuiSliderOptionsProvider
-<<<<<<< HEAD
-} from "./chunk-C7WKPE2C.js";
-import {
-  TuiChevron
-} from "./chunk-E4A3HSIZ.js";
-import {
-  TuiNumberFormat
-} from "./chunk-EQEXY5AC.js";
+} from "./chunk-AG6H33ND.js";
+import "./chunk-KEI7LUSK.js";
 import {
   TuiGroup
 } from "./chunk-BALLPL2T.js";
+import {
+  TuiChevron
+} from "./chunk-QWIMJNGL.js";
 import {
   TUI_TEXTFIELD_OPTIONS,
   TuiHint,
@@ -47,23 +47,26 @@ import {
   TuiHintPointer,
   TuiHintPosition,
   TuiHintUnstyled
-} from "./chunk-GTOOLSKA.js";
-=======
-} from "./chunk-PYJBD5TK.js";
-import {
-  TuiChevron
-} from "./chunk-JPQ4KS2K.js";
->>>>>>> 5564dde0 (lonic rebag)
+} from "./chunk-JSTJRJLM.js";
+import "./chunk-EIH4H6ZQ.js";
 import {
   MaskitoDirective,
   TuiCalendarRange,
   tuiIsFlat,
   tuiToggleDay
-<<<<<<< HEAD
-} from "./chunk-FSN5HPJX.js";
-=======
-} from "./chunk-TYV6JBDD.js";
->>>>>>> 5564dde0 (lonic rebag)
+} from "./chunk-6ODR2XOD.js";
+import {
+  TuiCalendar,
+  TuiCalendarYear,
+  TuiFlagPipe,
+  TuiLink,
+  TuiMonthPipe
+} from "./chunk-7EZQBND7.js";
+import {
+  TuiLet,
+  TuiMapperPipe,
+  TuiPopoverDirective
+} from "./chunk-DCYODZBR.js";
 import {
   MASKITO_DEFAULT_OPTIONS,
   TUI_COPY_TEXTS,
@@ -84,45 +87,7 @@ import {
   TUI_TIME_VALUE_TRANSFORMER,
   maskitoTransform,
   tuiDateStreamWithTransformer
-<<<<<<< HEAD
-} from "./chunk-6S6BGGGU.js";
-=======
-} from "./chunk-ZMRNDIB7.js";
-import "./chunk-G5XZPHSE.js";
-import {
-  TuiNumberFormat
-} from "./chunk-RVJVSLCE.js";
-import {
-  TuiGroup
-} from "./chunk-NKWLETPX.js";
-import {
-  TUI_TEXTFIELD_OPTIONS,
-  TuiHint,
-  TuiHintComponent,
-  TuiHintDescribe,
-  TuiHintDirective,
-  TuiHintDriver,
-  TuiHintHost,
-  TuiHintHover,
-  TuiHintManual,
-  TuiHintOptionsDirective,
-  TuiHintOverflow,
-  TuiHintPointer,
-  TuiHintPosition,
-  TuiHintUnstyled
-} from "./chunk-YBEYUEVO.js";
->>>>>>> 5564dde0 (lonic rebag)
-import {
-  TuiCalendar,
-  TuiCalendarYear,
-  TuiFlagPipe,
-  TuiLink,
-  TuiMonthPipe
-<<<<<<< HEAD
-} from "./chunk-2JTTTJFO.js";
-=======
-} from "./chunk-Q3NJJNIK.js";
->>>>>>> 5564dde0 (lonic rebag)
+} from "./chunk-BSGWPMIM.js";
 import {
   TUI_ANIMATIONS_SPEED,
   TUI_CLOSE_WORD,
@@ -171,25 +136,7 @@ import {
   tuiSlideInTop,
   tuiStringHashToHsl,
   tuiToAnimationOptions
-<<<<<<< HEAD
-} from "./chunk-UVVLRUXO.js";
-import "./chunk-C47N4ZBO.js";
-import "./chunk-KEI7LUSK.js";
-import "./chunk-EIH4H6ZQ.js";
-=======
-} from "./chunk-2W6O635T.js";
-import "./chunk-C47N4ZBO.js";
-import "./chunk-Y5XQTGPH.js";
->>>>>>> 5564dde0 (lonic rebag)
-import {
-  TuiLet,
-  TuiMapperPipe,
-  TuiPopoverDirective
-<<<<<<< HEAD
-} from "./chunk-DCYODZBR.js";
-=======
-} from "./chunk-QFLPP4CH.js";
->>>>>>> 5564dde0 (lonic rebag)
+} from "./chunk-2RD7LTBS.js";
 import {
   CHAR_EN_DASH,
   CHAR_HYPHEN,
@@ -283,12 +230,9 @@ import {
   tuiWatch,
   tuiZonefree,
   tuiZonefull
-<<<<<<< HEAD
 } from "./chunk-4OMUCSCF.js";
+import "./chunk-C47N4ZBO.js";
 import "./chunk-IU2M26LM.js";
-=======
-} from "./chunk-MIOTRVVA.js";
->>>>>>> 5564dde0 (lonic rebag)
 import {
   DefaultValueAccessor,
   FormsModule,
@@ -301,10 +245,6 @@ import {
   RangeValueAccessor,
   ɵNgSelectMultipleOption
 } from "./chunk-HDXU2QND.js";
-<<<<<<< HEAD
-=======
-import "./chunk-IU2M26LM.js";
->>>>>>> 5564dde0 (lonic rebag)
 import {
   DomSanitizer
 } from "./chunk-T32ZENQO.js";

@@ -1,4 +1,11 @@
 import {
+  TuiAutoFocus,
+  TuiFocusTrap
+} from "./chunk-UIJ63FDF.js";
+import {
+  TuiPopoverDirective
+} from "./chunk-DCYODZBR.js";
+import {
   TUI_ANIMATIONS_SPEED,
   TUI_CLOSE_WORD,
   TUI_COMMON_ICONS,
@@ -11,25 +18,7 @@ import {
   tuiGetViewportWidth,
   tuiHost,
   tuiSlideInTop
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-DC7J66EL.js
-} from "./chunk-UVVLRUXO.js";
-import {
-  TuiAutoFocus,
-  TuiFocusTrap
-} from "./chunk-UIJ63FDF.js";
-import {
-  TuiPopoverDirective
-} from "./chunk-DCYODZBR.js";
-========
-} from "./chunk-2W6O635T.js";
-import {
-  TuiAutoFocus,
-  TuiFocusTrap
-} from "./chunk-6AG66UOH.js";
-import {
-  TuiPopoverDirective
-} from "./chunk-QFLPP4CH.js";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-ERPGDW2S.js
+} from "./chunk-2RD7LTBS.js";
 import {
   PolymorpheusOutlet,
   TUI_TRUE_HANDLER,
@@ -46,11 +35,7 @@ import {
   tuiIsElement,
   tuiProvideOptions,
   tuiTypedFromEvent
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-DC7J66EL.js
 } from "./chunk-4OMUCSCF.js";
-========
-} from "./chunk-MIOTRVVA.js";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-ERPGDW2S.js
 import {
   AsyncPipe,
   DOCUMENT,
@@ -567,8 +552,4 @@ export {
   TuiDialog,
   TuiDialogs
 };
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-DC7J66EL.js
-//# sourceMappingURL=chunk-DC7J66EL.js.map
-========
-//# sourceMappingURL=chunk-ERPGDW2S.js.map
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-ERPGDW2S.js
+//# sourceMappingURL=chunk-JMKPMAPO.js.map

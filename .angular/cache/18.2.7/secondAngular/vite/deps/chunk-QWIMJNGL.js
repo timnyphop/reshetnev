@@ -1,21 +1,13 @@
 import {
   TUI_ICON_END,
   TuiDropdownDirective
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-E4A3HSIZ.js
-} from "./chunk-UVVLRUXO.js";
-========
-} from "./chunk-2W6O635T.js";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-JPQ4KS2K.js
+} from "./chunk-2RD7LTBS.js";
 import {
   tuiCreateToken,
   tuiInjectElement,
   tuiProvide,
   tuiWithStyles
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-E4A3HSIZ.js
 } from "./chunk-4OMUCSCF.js";
-========
-} from "./chunk-MIOTRVVA.js";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-JPQ4KS2K.js
 import {
   ChangeDetectionStrategy,
   Component,
@@ -125,8 +117,4 @@ export {
   TUI_CHEVRON,
   TuiChevron
 };
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-E4A3HSIZ.js
-//# sourceMappingURL=chunk-E4A3HSIZ.js.map
-========
-//# sourceMappingURL=chunk-JPQ4KS2K.js.map
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-JPQ4KS2K.js
+//# sourceMappingURL=chunk-QWIMJNGL.js.map

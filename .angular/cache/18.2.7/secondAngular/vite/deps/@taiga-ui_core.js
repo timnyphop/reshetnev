@@ -1,4 +1,7 @@
 import {
+  TuiPlatform
+} from "./chunk-2JBT7KQ6.js";
+import {
   TUI_ALERTS,
   TUI_ALERTS_GROUPED,
   TUI_ALERT_DEFAULT_OPTIONS,
@@ -13,39 +16,22 @@ import {
   TuiNotification,
   TuiTitle,
   tuiNotificationOptionsProvider
-<<<<<<< HEAD
-} from "./chunk-Z4N5WMRC.js";
-=======
-} from "./chunk-6GDU4J3S.js";
-import {
-  TuiNumberFormat
-} from "./chunk-RVJVSLCE.js";
-import {
-  TUI_GROUP_DEFAULT_OPTIONS,
-  TUI_GROUP_OPTIONS,
-  TuiGroup,
-  tuiGroupOptionsProvider
-} from "./chunk-NKWLETPX.js";
->>>>>>> 5564dde0 (lonic rebag)
+} from "./chunk-IEZP7SSJ.js";
 import {
   TUI_EXPAND_LOADED,
   TuiExpand,
   TuiExpandComponent,
   TuiExpandContent
-<<<<<<< HEAD
-} from "./chunk-G6KIPXXQ.js";
+} from "./chunk-DFXMJYS3.js";
 import {
   TuiNumberFormat
-} from "./chunk-EQEXY5AC.js";
+} from "./chunk-SQ22OPYI.js";
 import {
   TUI_GROUP_DEFAULT_OPTIONS,
   TUI_GROUP_OPTIONS,
   TuiGroup,
   tuiGroupOptionsProvider
 } from "./chunk-BALLPL2T.js";
-=======
-} from "./chunk-5ODVKJLK.js";
->>>>>>> 5564dde0 (lonic rebag)
 import {
   TUI_HINT_COMPONENT,
   TUI_HINT_DEFAULT_OPTIONS,
@@ -81,11 +67,8 @@ import {
   TuiWithTextfieldDropdown,
   tuiHintOptionsProvider,
   tuiTextfieldOptionsProvider
-<<<<<<< HEAD
-} from "./chunk-GTOOLSKA.js";
-=======
-} from "./chunk-YBEYUEVO.js";
->>>>>>> 5564dde0 (lonic rebag)
+} from "./chunk-JSTJRJLM.js";
+import "./chunk-EIH4H6ZQ.js";
 import {
   TUI_DIALOGS,
   TUI_DIALOGS_CLOSE,
@@ -97,11 +80,8 @@ import {
   TuiDialogService,
   TuiDialogs,
   tuiDialogOptionsProvider
-<<<<<<< HEAD
-} from "./chunk-DC7J66EL.js";
-=======
-} from "./chunk-ERPGDW2S.js";
->>>>>>> 5564dde0 (lonic rebag)
+} from "./chunk-JMKPMAPO.js";
+import "./chunk-UIJ63FDF.js";
 import {
   TUI_LINK_DEFAULT_OPTIONS,
   TUI_LINK_OPTIONS,
@@ -121,11 +101,8 @@ import {
   TuiOrderWeekDaysPipe,
   TuiSpinButton,
   tuiLinkOptionsProvider
-<<<<<<< HEAD
-} from "./chunk-2JTTTJFO.js";
-=======
-} from "./chunk-Q3NJJNIK.js";
->>>>>>> 5564dde0 (lonic rebag)
+} from "./chunk-7EZQBND7.js";
+import "./chunk-DCYODZBR.js";
 import {
   SCROLL_REF_SELECTOR,
   TUI_ANIMATIONS_DEFAULT_DURATION,
@@ -299,27 +276,7 @@ import {
   tuiToAnimationOptions,
   tuiWidthCollapse,
   tuiWidthCollapseList
-<<<<<<< HEAD
-} from "./chunk-UVVLRUXO.js";
-=======
-} from "./chunk-2W6O635T.js";
->>>>>>> 5564dde0 (lonic rebag)
-import {
-  PreventEventPlugin
-} from "./chunk-C47N4ZBO.js";
-import {
-  TuiPlatform
-<<<<<<< HEAD
-} from "./chunk-2JBT7KQ6.js";
-import "./chunk-EIH4H6ZQ.js";
-import "./chunk-UIJ63FDF.js";
-import "./chunk-DCYODZBR.js";
-=======
-} from "./chunk-77IFY2BZ.js";
-import "./chunk-Y5XQTGPH.js";
-import "./chunk-6AG66UOH.js";
-import "./chunk-QFLPP4CH.js";
->>>>>>> 5564dde0 (lonic rebag)
+} from "./chunk-2RD7LTBS.js";
 import {
   PolymorpheusOutlet,
   TUI_IS_MOBILE,
@@ -331,15 +288,12 @@ import {
   tuiWatch,
   tuiWithStyles,
   tuiZonefreeScheduler
-<<<<<<< HEAD
 } from "./chunk-4OMUCSCF.js";
+import {
+  PreventEventPlugin
+} from "./chunk-C47N4ZBO.js";
 import "./chunk-IU2M26LM.js";
 import "./chunk-HDXU2QND.js";
-=======
-} from "./chunk-MIOTRVVA.js";
-import "./chunk-HDXU2QND.js";
-import "./chunk-IU2M26LM.js";
->>>>>>> 5564dde0 (lonic rebag)
 import {
   EVENT_MANAGER_PLUGINS
 } from "./chunk-T32ZENQO.js";

@@ -24,13 +24,8 @@ import { IonApp, IonContent } from '@ionic/angular/standalone';
     ContainerComponent,
     ContainerComponent,
     TuiRoot,
-<<<<<<< HEAD
     IonApp,
     IonContent,
-=======
-    IonContent,
-    IonApp,
->>>>>>> 5564dde0 (lonic rebag)
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

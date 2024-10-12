@@ -7,12 +7,6 @@ import {
   NgControl,
   NgModel
 } from "./chunk-HDXU2QND.js";
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
-========
-import {
-  AnimationEngine
-} from "./chunk-IU2M26LM.js";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
 import {
   Meta
 } from "./chunk-T32ZENQO.js";
@@ -103,58 +97,6 @@ import {
   __spreadProps,
   __spreadValues
 } from "./chunk-QHQP2P2Z.js";
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
-========
-
-// node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-constants.mjs
-var rect = {
-  bottom: 0,
-  height: 0,
-  left: 0,
-  right: 0,
-  top: 0,
-  width: 0,
-  x: 0,
-  y: 0
-};
-var EMPTY_QUERY = new QueryList();
-var EMPTY_ARRAY = [];
-var EMPTY_FUNCTION = () => {
-};
-var EMPTY_CLIENT_RECT = __spreadProps(__spreadValues({}, rect), {
-  toJSON: () => rect
-});
-var TUI_FALSE_HANDLER = () => false;
-var TUI_TRUE_HANDLER = () => true;
-function bothEmpty(item1, item2) {
-  return Array.isArray(item1) && Array.isArray(item2) && !item1.length && !item2.length;
-}
-var TUI_DEFAULT_MATCHER = (item, search, stringify = String) => stringify(item).toLowerCase().includes(search.toLowerCase());
-var TUI_STRICT_MATCHER = (item, search, stringify = String) => stringify(item).toLowerCase() === search.toLowerCase();
-var TUI_DEFAULT_IDENTITY_MATCHER = (item1, item2) => item1 === item2 || bothEmpty(item1, item2);
-var TUI_DIGIT_REGEXP = /\d/;
-var TUI_NON_DIGIT_REGEXP = /\D/;
-var TUI_NON_DIGITS_REGEXP = /\D+/g;
-var svgNodeFilter = {
-  acceptNode(node) {
-    return "ownerSVGElement" in node ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
-  }
-};
-var CHAR_NO_BREAK_SPACE = " ";
-var CHAR_EN_DASH = "–";
-var CHAR_EM_DASH = "—";
-var CHAR_LAQUO = "«";
-var CHAR_RAQUO = "»";
-var CHAR_HYPHEN = "-";
-var CHAR_MINUS = "−";
-var CHAR_PLUS = "+";
-var CHAR_BULLET = "•";
-var CHAR_ELLIPSIS = "…";
-var CHAR_CURRENCY_SIGN = "¤";
-var CHAR_ZERO_WIDTH_SPACE = "​";
-var TUI_USED_ICONS = ["@tui.mir", "@tui.visa", "@tui.electron", "@tui.mastercard", "@tui.maestro", "@tui.amex", "@tui.diners-club", "@tui.discover", "@tui.humo", "@tui.jcb", "@tui.ru-pay", "@tui.union-pay", "@tui.uzcard", "@tui.verve", "@tui.external-link", "@tui.search", "@tui.sun", "@tui.moon", "@tui.code", "@tui.menu", "@tui.copy", "@tui.check", "@tui.link", "@tui.languages", "@tui.eye-off", "@tui.eye", "@tui.grip-vertical", "@tui.chevron-up", "@tui.chevron-down", "@tui.chevrons-up-down", "@tui.info", "@tui.circle-check", "@tui.circle-x", "@tui.circle-alert", "@tui.circle-help", "@tui.x", "@tui.chevron-right", "@tui.chevron-left", "@tui.minus", "@tui.file", "@tui.trash", "@tui.phone", "@tui.heart", "@tui.heart-filled", "@tui.star", "@tui.calendar", "@tui.rotate-ccw-square", "@tui.arrow-left", "@tui.arrow-right", "@tui.plus", "@tui.minimize", "@tui.filter", "@tui.layout-grid", "@tui.move-up-right", "@tui.move-right", "@tui.move-down-right", "@tui.move-down", "@tui.move-down-left", "@tui.move-left", "@tui.move-up-left", "@tui.move-up", "@tui.clock"];
-var TUI_VERSION = "4.9.0";
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
 
 // node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-utils-math.mjs
 function tuiClamp(value, min, max) {
@@ -606,252 +548,6 @@ function tuiWithStyles(component) {
   return void 0;
 }
 
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
-========
-// node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-observables.mjs
-function tuiControlValue(control) {
-  return new Observable((subscriber) => control?.valueChanges?.pipe(startWith(control.value)).subscribe(subscriber));
-}
-function tuiTypedFromEvent(target, event, options = {}) {
-  return fromEvent(target, event, options);
-}
-var TuiDragState = class {
-  constructor(stage, event) {
-    this.stage = stage;
-    this.event = event;
-  }
-};
-function tuiDragAndDropFrom(element) {
-  const {
-    ownerDocument
-  } = element;
-  return concat(tuiTypedFromEvent(element, "mousedown").pipe(take(1), map((event) => new TuiDragState("start", event))), merge(tuiTypedFromEvent(ownerDocument, "mousemove").pipe(map((event) => new TuiDragState("continues", event))), merge(tuiTypedFromEvent(ownerDocument, "mouseup"), tuiTypedFromEvent(ownerDocument, "dragend")).pipe(take(1), map((event) => new TuiDragState("end", event)), endWith(null))).pipe(takeWhile(tuiIsPresent))).pipe(repeat());
-}
-function tuiPreventDefault() {
-  return tap((event) => event.preventDefault());
-}
-function tuiStopPropagation() {
-  return tap((event) => event.stopPropagation());
-}
-function tuiIfMap(project, predicate = Boolean) {
-  return pipe(switchMap((value) => predicate(value) ? project(value) : EMPTY));
-}
-function tuiMustBePresent() {
-  return map((value) => {
-    if (!tuiIsPresent(value)) {
-      throw new TuiValuePresentException();
-    }
-    return value;
-  });
-}
-var TuiValuePresentException = class extends Error {
-  constructor() {
-    super(ngDevMode ? "Value must present" : "");
-  }
-};
-function tuiQueryListChanges(queryList) {
-  return queryList.changes.pipe(startWith(null), map(() => tuiGetOriginalArrayFromQueryList(queryList)));
-}
-function tuiScrollFrom(element) {
-  return tuiTypedFromEvent(element === element.ownerDocument.documentElement ? element.ownerDocument : element, "scroll");
-}
-function tuiTakeUntilDestroyed(destroyRef) {
-  return pipe(takeUntil(NEVER.pipe(takeUntilDestroyed(destroyRef), catchError(() => EMPTY), defaultIfEmpty(null))));
-}
-function tuiWatch(cdr) {
-  return tap(() => cdr.markForCheck());
-}
-function tuiZonefull(zone = inject(NgZone)) {
-  return (source) => new Observable((subscriber) => source.subscribe({
-    next: (value) => zone.run(() => subscriber.next(value)),
-    error: (error) => zone.run(() => subscriber.error(error)),
-    complete: () => zone.run(() => subscriber.complete())
-  }));
-}
-function tuiZonefree(zone = inject(NgZone)) {
-  return (source) => new Observable((subscriber) => zone.runOutsideAngular(() => source.subscribe(subscriber)));
-}
-function tuiZoneOptimized(zone = inject(NgZone)) {
-  return pipe(tuiZonefree(zone), tuiZonefull(zone));
-}
-var TuiZoneScheduler = class {
-  constructor(zoneConditionFn, scheduler = asyncScheduler) {
-    this.zoneConditionFn = zoneConditionFn;
-    this.scheduler = scheduler;
-  }
-  now() {
-    return this.scheduler.now();
-  }
-  schedule(...args) {
-    return this.zoneConditionFn(() => this.scheduler.schedule(...args));
-  }
-};
-function tuiZonefreeScheduler(zone = inject(NgZone), scheduler = asyncScheduler) {
-  return new TuiZoneScheduler(zone.runOutsideAngular.bind(zone), scheduler);
-}
-function tuiZonefullScheduler(zone = inject(NgZone), scheduler = asyncScheduler) {
-  return new TuiZoneScheduler(zone.run.bind(zone), scheduler);
-}
-
-// node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-utils-browser.mjs
-function tuiIsApple(navigator) {
-  return navigator.platform.startsWith("Mac") || navigator.platform === "iPhone";
-}
-function tuiIsEdge(userAgent) {
-  return userAgent.toLowerCase().includes("edge");
-}
-function tuiIsFirefox(userAgent) {
-  return userAgent.toLowerCase().includes("firefox");
-}
-var IOS_REG_EXP = /ipad|iphone|ipod/;
-function tuiIsIos(navigator) {
-  return IOS_REG_EXP.test(navigator.userAgent.toLowerCase()) || tuiIsApple(navigator) && navigator.maxTouchPoints > 1;
-}
-function tuiIsSafari({
-  ownerDocument: doc
-}) {
-  const win = doc?.defaultView;
-  const isMacOsSafari = win.safari !== void 0 && win.safari?.pushNotification?.toString() === "[object SafariRemoteNotification]";
-  const isIosSafari = !!win.navigator?.vendor?.includes("Apple") && !win.navigator?.userAgent?.includes("CriOS") && !win.navigator?.userAgent?.includes("FxiOS");
-  return isMacOsSafari || isIosSafari;
-}
-
-// node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-utils-color.mjs
-function tuiGetGradientData(gradient) {
-  return gradient.slice(0, Math.max(0, gradient.length - 1)).replace("linear-gradient(", "");
-}
-function tuiHexToRgb(hex) {
-  const matches = hex.replace("#", "").split("").map((char, _, array) => array.length === 3 ? char + char : char).join("").match(/.{2}/g);
-  return matches ? matches.map((x) => Number.parseInt(x, 16)) : [0, 0, 0];
-}
-var getChunksFromString = (hex, chunkSize) => hex.match(new RegExp(`.{${chunkSize}}`, "g"));
-var convertHexUnitTo256 = (hexStr) => parseInt(hexStr.repeat(2 / hexStr.length), 16);
-var getAlphaFloat = (a, alpha) => {
-  if (a !== void 0) {
-    return Number((a / 255).toFixed(2));
-  }
-  if (typeof alpha !== "number" || alpha < 0 || alpha > 1) {
-    return 1;
-  }
-  return alpha;
-};
-function tuiHexToRGBA(hex, alpha) {
-  const [r, g, b, a] = tuiParseHex(hex, alpha);
-  return a < 1 ? `rgba(${r}, ${g}, ${b}, ${a})` : `rgb(${r}, ${g}, ${b})`;
-}
-function tuiIsValidHex(hex) {
-  return /^#([A-Fa-f0-9]{3,4}){1,2}$/.test(hex);
-}
-function tuiParseHex(hex, alpha) {
-  if (!tuiIsValidHex(hex)) {
-    throw new Error("Invalid HEX");
-  }
-  const chunkSize = Math.floor((hex.length - 1) / 3);
-  const hexArr = getChunksFromString(hex.slice(1), chunkSize);
-  const [r = NaN, g = NaN, b = NaN, a] = hexArr?.map(convertHexUnitTo256) ?? [];
-  const floatAlpha = getAlphaFloat(a, alpha);
-  return [r, g, b, floatAlpha];
-}
-function hsvToColor(h, s, v, n) {
-  const k = (n + h / 60) % 6;
-  return Math.round(v - v * s * Math.max(Math.min(k, 4 - k, 1), 0));
-}
-function tuiHsvToRgb(h, s, v) {
-  return [hsvToColor(h, s, v, 5), hsvToColor(h, s, v, 3), hsvToColor(h, s, v, 1)];
-}
-var DEFAULT = [0, 0, 0, 1];
-function tuiParseColor(color) {
-  const stripped = color.replace("#", "").replace("rgba(", "").replace("rgb(", "").replace(")", "");
-  const array = stripped.split(",").map((item) => parseFloat(item));
-  if (array.length === 4) {
-    return array;
-  }
-  if (array.length === 3) {
-    return array.concat(1);
-  }
-  const matches = stripped.match(new RegExp(`(.{${stripped.length / 3}})`, "g"));
-  if (!matches) {
-    return DEFAULT;
-  }
-  const parsed = matches.map((char) => parseInt(stripped.length % 2 ? char + char : char, 16));
-  return [parsed[0] || DEFAULT[0], parsed[1] || DEFAULT[1], parsed[2] || DEFAULT[2], parsed[3] === void 0 ? DEFAULT[3] : parsed[3]];
-}
-var COMMA = String.raw`\s*,\s*`;
-var HEX = "#(?:[a-f0-9]{6}|[a-f0-9]{3})";
-var RGB = String.raw`\(\s*(?:\d{1,3}\s*,\s*){2}\d{1,3}\s*\)`;
-var RGBA = String.raw`\(\s*(?:\d{1,3}\s*,\s*){2}\d{1,3}\s*,\s*\d*\.?\d+\)`;
-var VALUE = String.raw`(?:[+-]?\d*\.?\d+)(?:%|[a-z]+)?`;
-var KEYWORD = "[_a-z-][_a-z0-9-]*";
-var COLOR = ["(?:", HEX, "|", "(?:rgb|hsl)", RGB, "|", "(?:rgba|hsla)", RGBA, "|", KEYWORD, ")"];
-var REGEXP_ARRAY = [String.raw`\s*(`, ...COLOR, ")", String.raw`(?:\s+`, "(", VALUE, "))?", "(?:", COMMA, String.raw`\s*)?`];
-function getPosition(match, stops) {
-  const fallback = stops === 1 ? "100%" : `${stops}%`;
-  return match?.includes("%") ? match : fallback;
-}
-function tuiParseGradient(input) {
-  const stopsRegexp = new RegExp(REGEXP_ARRAY.join(""), "gi");
-  const stopsString = input.startsWith("to") || /^\d/.exec(input) ? input.slice(Math.max(0, input.indexOf(",") + 1)).trim() : input;
-  const side = input.startsWith("to") ? input.split(",")[0] : "to bottom";
-  let stops = [];
-  let matchColorStop = stopsRegexp.exec(stopsString);
-  while (matchColorStop !== null) {
-    stops = stops.concat({
-      color: matchColorStop[1] || "",
-      position: getPosition(matchColorStop[2] || "", stops.length)
-    });
-    matchColorStop = stopsRegexp.exec(stopsString);
-  }
-  stops = stops.filter(({
-    color
-  }) => color.startsWith("#") || color.startsWith("rgb"));
-  return {
-    stops,
-    side
-  };
-}
-function tuiToGradient({
-  stops,
-  side
-}) {
-  return `linear-gradient(${side}, ${stops.map(({
-    color,
-    position
-  }) => `rgba(${tuiParseColor(color).join(", ")}) ${position}`).join(", ")})`;
-}
-function tuiRgbToHex(r, g, b) {
-  return `#${[r, g, b].map((x) => x.toString(16).padStart(2, "0")).join("")}`;
-}
-function tuiRgbToHsv(r, g, b) {
-  const v = Math.max(r, g, b);
-  const n = v - Math.min(r, g, b);
-  const h = n && (v === r ? (g - b) / n : v === g ? 2 + (b - r) / n : 4 + (r - g) / n);
-  return [60 * (h < 0 ? h + 6 : h), v && n / v, v];
-}
-function tuiRgbaToHex(color) {
-  if (!tuiIsValidRgba(color)) {
-    throw new Error("Invalid RGBa");
-  }
-  const rgb = /^rgba?\((\d+),(\d+),(\d+),?([^,\s)]+)?/i.exec(color.replaceAll(/\s/g, "")) ?? null;
-  let alpha = (rgb?.[4] ?? "").toString().trim();
-  let hex = rgb ? ((parseInt(rgb?.[1] ?? "", 10) || 0) | 1 << 8).toString(16).slice(1) + ((parseInt(rgb?.[2] ?? "", 10) || 0) | 1 << 8).toString(16).slice(1) + ((parseInt(rgb?.[3] ?? "", 10) || 0) | 1 << 8).toString(16).slice(1) : color;
-  alpha = alpha !== "" ? alpha : 1;
-  alpha = (Number(alpha) * 255 | 1 << 8).toString(16).slice(1);
-  hex += alpha;
-  return `#${hex.toUpperCase()}`;
-}
-function tuiIsValidRgba(rgba) {
-  const range = String.raw`(\d|[1-9]\d|1\d{2}|2[0-4]\d|2[0-5]{2})`;
-  const alpha = String.raw`([01]|0?\.\d+)`;
-  return new RegExp(`^(?:rgb\\(\\s*${range}\\s*,\\s*${range}\\s*,\\s*${range}\\s*\\)|rgba\\(\\s*${range}\\s*,\\s*${range}\\s*,\\s*${range}\\s*,\\s*${alpha}\\s*\\))$`).test(rgba);
-}
-
-// node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-utils-di.mjs
-function tuiCreateOptions(defaults) {
-  const token = tuiCreateToken(defaults);
-  return [token, (options) => tuiProvideOptions(token, options, defaults)];
-}
-
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
 // node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-utils-dom.mjs
 function tuiContainsOrAfter(current, node) {
   try {
@@ -999,7 +695,6 @@ function tuiRetargetedBoundaryCrossing(event) {
   return false;
 }
 
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
 // node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-constants.mjs
 var rect = {
   bottom: 0,
@@ -1049,8 +744,6 @@ var CHAR_ZERO_WIDTH_SPACE = "​";
 var TUI_USED_ICONS = ["@tui.mir", "@tui.visa", "@tui.electron", "@tui.mastercard", "@tui.maestro", "@tui.amex", "@tui.diners-club", "@tui.discover", "@tui.humo", "@tui.jcb", "@tui.ru-pay", "@tui.union-pay", "@tui.uzcard", "@tui.verve", "@tui.external-link", "@tui.search", "@tui.sun", "@tui.moon", "@tui.code", "@tui.menu", "@tui.copy", "@tui.check", "@tui.link", "@tui.languages", "@tui.eye-off", "@tui.eye", "@tui.grip-vertical", "@tui.chevron-up", "@tui.chevron-down", "@tui.chevrons-up-down", "@tui.info", "@tui.circle-check", "@tui.circle-x", "@tui.circle-alert", "@tui.circle-help", "@tui.x", "@tui.chevron-right", "@tui.chevron-left", "@tui.minus", "@tui.file", "@tui.trash", "@tui.phone", "@tui.heart", "@tui.heart-filled", "@tui.star", "@tui.calendar", "@tui.rotate-ccw-square", "@tui.arrow-left", "@tui.arrow-right", "@tui.plus", "@tui.minimize", "@tui.filter", "@tui.layout-grid", "@tui.move-up-right", "@tui.move-right", "@tui.move-down-right", "@tui.move-down", "@tui.move-down-left", "@tui.move-left", "@tui.move-up-left", "@tui.move-up", "@tui.clock"];
 var TUI_VERSION = "4.9.0";
 
-========
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
 // node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-utils-focus.mjs
 function tuiGetNativeFocused({
   activeElement
@@ -1142,7 +835,6 @@ function tuiMoveFocus(currentIndex, elements, step) {
   }
 }
 
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
 // node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-observables.mjs
 function tuiControlValue(control) {
   return new Observable((subscriber) => control?.valueChanges?.pipe(startWith(control.value)).subscribe(subscriber));
@@ -1386,8 +1078,6 @@ function tuiCreateOptions(defaults) {
   return [token, (options) => tuiProvideOptions(token, options, defaults)];
 }
 
-========
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
 // node_modules/@ng-web-apis/common/fesm2022/ng-web-apis-common.mjs
 var WA_WINDOW = new InjectionToken("[WA_WINDOW]", {
   factory: () => {
@@ -1616,7 +1306,6 @@ var TUI_WINDOW_SIZE = tuiCreateTokenFromFactory(() => {
   }));
 });
 
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
 // node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-directives-active-zone.mjs
 var TuiActiveZone = class _TuiActiveZone {
   constructor() {
@@ -1664,93 +1353,10 @@ var TuiActiveZone = class _TuiActiveZone {
   static {
     this.ɵfac = function TuiActiveZone_Factory(__ngFactoryType__) {
       return new (__ngFactoryType__ || _TuiActiveZone)();
-========
-// node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-classes.mjs
-var _c0 = ["viewContainer"];
-var TuiValueTransformer = class {
-};
-var FLAGS = {
-  self: true,
-  optional: true
-};
-var TuiControl = class _TuiControl {
-  constructor() {
-    this.fallback = inject(TUI_FALLBACK_VALUE, FLAGS);
-    this.refresh$ = new Subject();
-    this.pseudoInvalid = signal(null);
-    this.internal = signal(this.fallback);
-    this.control = inject(NgControl, {
-      self: true
-    });
-    this.cdr = inject(ChangeDetectorRef);
-    this.transformer = inject(TuiValueTransformer, FLAGS);
-    this.value = computed(() => this.internal() ?? this.fallback);
-    this.readOnly = signal(false);
-    this.touched = signal(false);
-    this.status = signal(void 0);
-    this.disabled = computed(() => this.status() === "DISABLED");
-    this.interactive = computed(() => !this.disabled() && !this.readOnly());
-    this.invalid = computed(() => this.pseudoInvalid() !== null ? !!this.pseudoInvalid() && this.interactive() : this.interactive() && this.touched() && this.status() === "INVALID");
-    this.mode = computed(() => (
-      // eslint-disable-next-line no-nested-ternary
-      this.readOnly() ? "readonly" : this.invalid() ? "invalid" : "valid"
-    ));
-    this.onTouched = EMPTY_FUNCTION;
-    this.onChange = EMPTY_FUNCTION;
-    this.control.valueAccessor = this;
-    this.refresh$.pipe(delay(0), startWith(null), map(() => this.control.control), filter(Boolean), distinctUntilChanged(), switchMap((c) => merge(c.valueChanges, c.statusChanges)), takeUntilDestroyed()).subscribe(() => this.update());
-  }
-  set readOnlySetter(readOnly) {
-    this.readOnly.set(readOnly);
-  }
-  set invalidSetter(invalid) {
-    this.pseudoInvalid.set(invalid);
-  }
-  registerOnChange(onChange) {
-    this.refresh$.next();
-    this.onChange = (value) => {
-      if (value === this.internal()) {
-        return;
-      }
-      onChange(this.toControlValue(value));
-      this.internal.set(value);
-      this.update();
-    };
-  }
-  registerOnTouched(onTouched) {
-    this.onTouched = () => {
-      onTouched();
-      this.update();
-    };
-  }
-  setDisabledState() {
-    this.update();
-  }
-  writeValue(value) {
-    const safe = this.control instanceof NgModel ? this.control.model : value;
-    this.internal.set(this.fromControlValue(safe));
-    this.update();
-  }
-  fromControlValue(value) {
-    return this.transformer ? this.transformer.fromControlValue(value) : value;
-  }
-  toControlValue(value) {
-    return this.transformer ? this.transformer.toControlValue(value) : value;
-  }
-  update() {
-    this.status.set(this.control.control?.status);
-    this.touched.set(!!this.control.control?.touched);
-    this.cdr.markForCheck();
-  }
-  static {
-    this.ɵfac = function TuiControl_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _TuiControl)();
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
     };
   }
   static {
     this.ɵdir = ɵɵdefineDirective({
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
       type: _TuiActiveZone,
       selectors: [["", "tuiActiveZone", "", 5, "ng-container"], ["", "tuiActiveZoneChange", "", 5, "ng-container"], ["", "tuiActiveZoneParent", "", 5, "ng-container"]],
       hostBindings: function TuiActiveZone_HostBindings(rf, ctx) {
@@ -1796,146 +1402,6 @@ __decorate([tuiPure], TuiActiveZone.prototype, "setZone", null);
     setZone: []
   });
 })();
-========
-      type: _TuiControl,
-      inputs: {
-        readOnlySetter: [0, "readOnly", "readOnlySetter"],
-        invalidSetter: [0, "invalid", "invalidSetter"]
-      }
-    });
-  }
-};
-__decorate([tuiPure], TuiControl.prototype, "fromControlValue", null);
-__decorate([tuiPure], TuiControl.prototype, "toControlValue", null);
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TuiControl, [{
-    type: Directive
-  }], function() {
-    return [];
-  }, {
-    readOnlySetter: [{
-      type: Input,
-      args: ["readOnly"]
-    }],
-    invalidSetter: [{
-      type: Input,
-      args: ["invalid"]
-    }],
-    fromControlValue: [],
-    toControlValue: []
-  });
-})();
-function tuiAsControl(control) {
-  return tuiProvide(TuiControl, control);
-}
-var TuiPortals = class _TuiPortals {
-  constructor() {
-    this.injector = inject(INJECTOR$1);
-    this.nothing = inject(TuiPortalService).attach(this);
-  }
-  addComponentChild(component) {
-    const injector = component.createInjector(this.injector);
-    const ref = this.vcr.createComponent(component.component, {
-      injector
-    });
-    ref.changeDetectorRef.detectChanges();
-    return ref;
-  }
-  addTemplateChild(templateRef, context) {
-    return this.vcr.createEmbeddedView(templateRef, context);
-  }
-  static {
-    this.ɵfac = function TuiPortals_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _TuiPortals)();
-    };
-  }
-  static {
-    this.ɵdir = ɵɵdefineDirective({
-      type: _TuiPortals,
-      viewQuery: function TuiPortals_Query(rf, ctx) {
-        if (rf & 1) {
-          ɵɵviewQuery(_c0, 5, ViewContainerRef);
-        }
-        if (rf & 2) {
-          let _t;
-          ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.vcr = _t.first);
-        }
-      }
-    });
-  }
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TuiPortals, [{
-    type: Directive
-  }], null, {
-    vcr: [{
-      type: ViewChild,
-      args: ["viewContainer", {
-        read: ViewContainerRef
-      }]
-    }]
-  });
-})();
-var TuiPortalService = class _TuiPortalService {
-  attach(host) {
-    this.host = host;
-  }
-  add(component) {
-    return this.safeHost.addComponentChild(component);
-  }
-  remove({
-    hostView
-  }) {
-    if (!hostView.destroyed) {
-      hostView.destroy();
-    }
-  }
-  addTemplate(templateRef, context) {
-    return this.safeHost.addTemplateChild(templateRef, context);
-  }
-  removeTemplate(viewRef) {
-    if (!viewRef.destroyed) {
-      viewRef.destroy();
-    }
-  }
-  get safeHost() {
-    if (!this.host) {
-      throw new TuiNoHostException();
-    }
-    return this.host;
-  }
-  static {
-    this.ɵfac = function TuiPortalService_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _TuiPortalService)();
-    };
-  }
-  static {
-    this.ɵprov = ɵɵdefineInjectable({
-      token: _TuiPortalService,
-      factory: _TuiPortalService.ɵfac
-    });
-  }
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TuiPortalService, [{
-    type: Injectable
-  }], null, null);
-})();
-function tuiAsPortal(portal) {
-  return tuiProvide(TuiPortalService, portal);
-}
-var TuiNoHostException = class extends Error {
-  constructor() {
-    super(ngDevMode ? "Portals cannot be used without TuiPortalHostComponent" : "");
-  }
-};
-var TuiValidationError = class {
-  constructor(message, context = {}) {
-    this.message = message;
-    this.context = context;
-  }
-};
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
 
 // node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-date-time.mjs
 function tuiDateClamp(date, min, max) {
@@ -2720,7 +2186,6 @@ var TuiTime = class _TuiTime {
   }
 };
 
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
 // node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-classes.mjs
 var _c0 = ["viewContainer"];
 var TuiValueTransformer = class {
@@ -2801,60 +2266,10 @@ var TuiControl = class _TuiControl {
   static {
     this.ɵfac = function TuiControl_Factory(__ngFactoryType__) {
       return new (__ngFactoryType__ || _TuiControl)();
-========
-// node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-directives-active-zone.mjs
-var TuiActiveZone = class _TuiActiveZone {
-  constructor() {
-    this.control = inject(NgControl, {
-      self: true,
-      optional: true
-    });
-    this.active$ = inject(TUI_ACTIVE_ELEMENT);
-    this.zone = inject(NgZone);
-    this.el = tuiInjectElement();
-    this.tuiActiveZoneParent = null;
-    this.subActiveZones = [];
-    this.directParentActiveZone = inject(_TuiActiveZone, {
-      skipSelf: true,
-      optional: true
-    });
-    this.tuiActiveZoneChange = this.active$.pipe(map((element) => !!element && this.contains(element)), startWith(false), distinctUntilChanged(), skip(1), tap((active) => {
-      if (!active && typeof this.control?.valueAccessor.onTouched === "function") {
-        this.control.valueAccessor.onTouched();
-      }
-    }), tuiZoneOptimized(this.zone));
-    this.directParentActiveZone?.addSubActiveZone(this);
-  }
-  set tuiActiveZoneParentSetter(zone) {
-    this.setZone(zone);
-  }
-  ngOnDestroy() {
-    this.directParentActiveZone?.removeSubActiveZone(this);
-    this.tuiActiveZoneParent?.removeSubActiveZone(this);
-  }
-  contains(node) {
-    return this.el.contains(node) || this.subActiveZones.some((item, index, array) => array.indexOf(item) === index && item.contains(node));
-  }
-  setZone(zone) {
-    this.tuiActiveZoneParent?.removeSubActiveZone(this);
-    zone?.addSubActiveZone(this);
-    this.tuiActiveZoneParent = zone;
-  }
-  addSubActiveZone(activeZone) {
-    this.subActiveZones = [...this.subActiveZones, activeZone];
-  }
-  removeSubActiveZone(activeZone) {
-    this.subActiveZones = tuiArrayRemove(this.subActiveZones, this.subActiveZones.indexOf(activeZone));
-  }
-  static {
-    this.ɵfac = function TuiActiveZone_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _TuiActiveZone)();
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
     };
   }
   static {
     this.ɵdir = ɵɵdefineDirective({
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
       type: _TuiControl,
       inputs: {
         readOnlySetter: [0, "readOnly", "readOnlySetter"],
@@ -2965,92 +2380,16 @@ var TuiPortalService = class _TuiPortalService {
   static {
     this.ɵfac = function TuiPortalService_Factory(__ngFactoryType__) {
       return new (__ngFactoryType__ || _TuiPortalService)();
-========
-      type: _TuiActiveZone,
-      selectors: [["", "tuiActiveZone", "", 5, "ng-container"], ["", "tuiActiveZoneChange", "", 5, "ng-container"], ["", "tuiActiveZoneParent", "", 5, "ng-container"]],
-      hostBindings: function TuiActiveZone_HostBindings(rf, ctx) {
-        if (rf & 1) {
-          ɵɵlistener("mousedown.silent", function TuiActiveZone_mousedown_silent_HostBindingHandler() {
-            return 0;
-          }, false, ɵɵresolveDocument);
-        }
-      },
-      inputs: {
-        tuiActiveZoneParentSetter: [0, "tuiActiveZoneParent", "tuiActiveZoneParentSetter"]
-      },
-      outputs: {
-        tuiActiveZoneChange: "tuiActiveZoneChange"
-      },
-      exportAs: ["tuiActiveZone"],
-      standalone: true
-    });
-  }
-};
-__decorate([tuiPure], TuiActiveZone.prototype, "setZone", null);
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TuiActiveZone, [{
-    type: Directive,
-    args: [{
-      standalone: true,
-      selector: "[tuiActiveZone]:not(ng-container), [tuiActiveZoneChange]:not(ng-container), [tuiActiveZoneParent]:not(ng-container)",
-      exportAs: "tuiActiveZone",
-      host: {
-        "(document:mousedown.silent)": "(0)"
-      }
-    }]
-  }], function() {
-    return [];
-  }, {
-    tuiActiveZoneChange: [{
-      type: Output
-    }],
-    tuiActiveZoneParentSetter: [{
-      type: Input,
-      args: ["tuiActiveZoneParent"]
-    }],
-    setZone: []
-  });
-})();
-
-// node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-directives-hovered.mjs
-function movedOut({
-  currentTarget,
-  relatedTarget
-}) {
-  return !tuiIsElement(relatedTarget) || !tuiIsElement(currentTarget) || !currentTarget.contains(relatedTarget);
-}
-var TuiHoveredService = class _TuiHoveredService extends Observable {
-  constructor() {
-    super((subscriber) => this.stream$.subscribe(subscriber));
-    this.el = tuiInjectElement();
-    this.zone = inject(NgZone);
-    this.stream$ = merge(
-      tuiTypedFromEvent(this.el, "mouseenter").pipe(map(TUI_TRUE_HANDLER)),
-      tuiTypedFromEvent(this.el, "mouseleave").pipe(map(TUI_FALSE_HANDLER)),
-      // Hello, Safari
-      tuiTypedFromEvent(this.el, "mouseout").pipe(filter(movedOut), map(TUI_FALSE_HANDLER))
-    ).pipe(distinctUntilChanged(), tuiZoneOptimized(this.zone));
-  }
-  static {
-    this.ɵfac = function TuiHoveredService_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _TuiHoveredService)();
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
     };
   }
   static {
     this.ɵprov = ɵɵdefineInjectable({
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
       token: _TuiPortalService,
       factory: _TuiPortalService.ɵfac
-========
-      token: _TuiHoveredService,
-      factory: _TuiHoveredService.ɵfac
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
     });
   }
 };
 (() => {
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TuiPortalService, [{
     type: Injectable
   }], null, null);
@@ -3069,54 +2408,6 @@ var TuiValidationError = class {
     this.context = context;
   }
 };
-========
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TuiHoveredService, [{
-    type: Injectable
-  }], function() {
-    return [];
-  }, null);
-})();
-function tuiHovered() {
-  return toSignal(inject(TUI_IS_MOBILE) ? of(false) : inject(TuiHoveredService).pipe(tuiWatch(inject(ChangeDetectorRef))), {
-    initialValue: false
-  });
-}
-var TuiHovered = class _TuiHovered {
-  constructor() {
-    this.tuiHoveredChange = inject(TuiHoveredService);
-  }
-  static {
-    this.ɵfac = function TuiHovered_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _TuiHovered)();
-    };
-  }
-  static {
-    this.ɵdir = ɵɵdefineDirective({
-      type: _TuiHovered,
-      selectors: [["", "tuiHoveredChange", ""]],
-      outputs: {
-        tuiHoveredChange: "tuiHoveredChange"
-      },
-      standalone: true,
-      features: [ɵɵProvidersFeature([TuiHoveredService])]
-    });
-  }
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TuiHovered, [{
-    type: Directive,
-    args: [{
-      standalone: true,
-      selector: "[tuiHoveredChange]",
-      providers: [TuiHoveredService]
-    }]
-  }], null, {
-    tuiHoveredChange: [{
-      type: Output
-    }]
-  });
-})();
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
 
 // node_modules/@taiga-ui/cdk/fesm2022/taiga-ui-cdk-directives-obscured.mjs
 var TuiObscuredService = class _TuiObscuredService extends Observable {
@@ -3626,36 +2917,6 @@ export {
   takeUntilDestroyed,
   toObservable,
   toSignal,
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
-========
-  EMPTY_QUERY,
-  EMPTY_ARRAY,
-  EMPTY_FUNCTION,
-  EMPTY_CLIENT_RECT,
-  TUI_FALSE_HANDLER,
-  TUI_TRUE_HANDLER,
-  TUI_DEFAULT_MATCHER,
-  TUI_STRICT_MATCHER,
-  TUI_DEFAULT_IDENTITY_MATCHER,
-  TUI_DIGIT_REGEXP,
-  TUI_NON_DIGIT_REGEXP,
-  TUI_NON_DIGITS_REGEXP,
-  svgNodeFilter,
-  CHAR_NO_BREAK_SPACE,
-  CHAR_EN_DASH,
-  CHAR_EM_DASH,
-  CHAR_LAQUO,
-  CHAR_RAQUO,
-  CHAR_HYPHEN,
-  CHAR_MINUS,
-  CHAR_PLUS,
-  CHAR_BULLET,
-  CHAR_ELLIPSIS,
-  CHAR_CURRENCY_SIGN,
-  CHAR_ZERO_WIDTH_SPACE,
-  TUI_USED_ICONS,
-  TUI_VERSION,
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
   WA_WINDOW,
   WA_ANIMATION_FRAME,
   WA_LOCAL_STORAGE,
@@ -3704,46 +2965,6 @@ export {
   tuiPx,
   tuiUniqBy,
   tuiWithStyles,
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
-========
-  tuiControlValue,
-  tuiTypedFromEvent,
-  TuiDragState,
-  tuiDragAndDropFrom,
-  tuiPreventDefault,
-  tuiStopPropagation,
-  tuiIfMap,
-  tuiMustBePresent,
-  TuiValuePresentException,
-  tuiQueryListChanges,
-  tuiScrollFrom,
-  tuiTakeUntilDestroyed,
-  tuiWatch,
-  tuiZonefull,
-  tuiZonefree,
-  tuiZoneOptimized,
-  tuiZonefreeScheduler,
-  tuiZonefullScheduler,
-  tuiIsApple,
-  tuiIsEdge,
-  tuiIsFirefox,
-  tuiIsIos,
-  tuiIsSafari,
-  tuiGetGradientData,
-  tuiHexToRgb,
-  tuiHexToRGBA,
-  tuiIsValidHex,
-  tuiParseHex,
-  tuiHsvToRgb,
-  tuiParseColor,
-  tuiParseGradient,
-  tuiToGradient,
-  tuiRgbToHex,
-  tuiRgbToHsv,
-  tuiRgbaToHex,
-  tuiIsValidRgba,
-  tuiCreateOptions,
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
   tuiContainsOrAfter,
   tuiIsInput,
   tuiIsTextarea,
@@ -3766,7 +2987,6 @@ export {
   tuiIsNodeIn,
   tuiPointToClientRect,
   tuiRetargetedBoundaryCrossing,
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
   EMPTY_QUERY,
   EMPTY_ARRAY,
   EMPTY_FUNCTION,
@@ -3794,8 +3014,6 @@ export {
   CHAR_ZERO_WIDTH_SPACE,
   TUI_USED_ICONS,
   TUI_VERSION,
-========
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
   tuiGetNativeFocused,
   tuiBlurNativeFocused,
   tuiFocusedIn,
@@ -3805,7 +3023,6 @@ export {
   tuiIsNativeFocused,
   tuiIsNativeFocusedIn,
   tuiMoveFocus,
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
   tuiControlValue,
   tuiTypedFromEvent,
   TuiDragState,
@@ -3843,8 +3060,6 @@ export {
   tuiRgbaToHex,
   tuiIsValidRgba,
   tuiCreateOptions,
-========
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
   TUI_REMOVED_ELEMENT,
   TUI_ACTIVE_ELEMENT,
   TUI_BASE_HREF,
@@ -3861,7 +3076,6 @@ export {
   tuiFallbackValueProvider,
   TUI_RANGE,
   TUI_WINDOW_SIZE,
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
   TuiActiveZone,
   tuiDateClamp,
   DAYS_IN_WEEK,
@@ -3899,8 +3113,6 @@ export {
   PolymorpheusComponent,
   PolymorpheusTemplate,
   PolymorpheusOutlet,
-========
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
   TuiValueTransformer,
   TuiControl,
   tuiAsControl,
@@ -3909,56 +3121,11 @@ export {
   tuiAsPortal,
   TuiNoHostException,
   TuiValidationError,
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
   TuiObscuredService,
   TuiObscured,
   TuiHoveredService,
   tuiHovered,
   TuiHovered,
-========
-  tuiDateClamp,
-  DAYS_IN_WEEK,
-  DAYS_IN_NORMAL_YEAR,
-  DAYS_IN_LEAP_YEAR,
-  MONTHS_IN_YEAR,
-  MIN_DAY,
-  MIN_MONTH,
-  MAX_MONTH,
-  MIN_YEAR,
-  MAX_YEAR,
-  RANGE_SEPARATOR_CHAR,
-  MILLISECONDS_IN_SECOND,
-  SECONDS_IN_MINUTE,
-  MINUTES_IN_HOUR,
-  HOURS_IN_DAY,
-  MILLISECONDS_IN_MINUTE,
-  MILLISECONDS_IN_HOUR,
-  MILLISECONDS_IN_DAY,
-  DATE_FILLER_LENGTH,
-  DATE_RANGE_FILLER_LENGTH,
-  TuiDayOfWeek,
-  TuiMonthNumber,
-  TuiYear,
-  TuiMonth,
-  TuiDay,
-  TuiInvalidDayException,
-  TuiMonthRange,
-  TuiDayRange,
-  TUI_FIRST_DAY,
-  TUI_LAST_DAY,
-  TuiTime,
-  TuiActiveZone,
-  TuiHoveredService,
-  tuiHovered,
-  TuiHovered,
-  TuiObscuredService,
-  TuiObscured,
-  POLYMORPHEUS_CONTEXT,
-  injectContext,
-  PolymorpheusComponent,
-  PolymorpheusTemplate,
-  PolymorpheusOutlet,
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
   TuiIdService,
   tuiInjectId,
   TuiPopoverService,
@@ -3976,8 +3143,4 @@ export {
    * License: MIT
    *)
 */
-<<<<<<<< HEAD:.angular/cache/18.2.7/secondAngular/vite/deps/chunk-4OMUCSCF.js
 //# sourceMappingURL=chunk-4OMUCSCF.js.map
-========
-//# sourceMappingURL=chunk-MIOTRVVA.js.map
->>>>>>>> 5564dde0 (lonic rebag):.angular/cache/18.2.7/secondAngular/vite/deps/chunk-MIOTRVVA.js
