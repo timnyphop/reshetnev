@@ -14,10 +14,7 @@
   text-align: center;
   cursor: default;
   box-sizing: border-box;
-  border-radius: 10px;
-  border-top: 1px solid lightgray;
   padding: 10px 0;
-  border-bottom: 1px solid lightgray;
 }
 
 .partner-card__block {
@@ -36,7 +33,6 @@
   border: 1px solid lightgray;
   border-radius: 15px;
   gap: 20px;
-  background-color: var(--primary);
   box-sizing: border-box;
 }
 
@@ -92,8 +88,6 @@
   gap: 20px; /* Здесь задаем gap между заголовком и каруселью */
   display: none;
   border-radius: 20px;
-  border-bottom: 1px solid lightgray;
-  border-top: 1px solid lightgray;
 
   padding: 10px 0;
 }
@@ -117,7 +111,6 @@
   justify-content: center;
   margin: 0 auto;
   border-radius: 20px;
-  background-color: var(--primary);
 }
 
 .partner-card__img {

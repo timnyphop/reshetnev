@@ -1,11 +1,11 @@
-<div class="about-us__block">
-  <h1 class="about-us__title">Мы в цифрах</h1>
+<div class="about-us__block" tuiCardLarge tuiSurface="elevated">
+  <h1 class="about-us__title" tuiTitle="l">Мы в цифрах</h1>
   <div class="about-us-card__block">
     <tui-carousel [duration]="duration" [(index)]="index" class="carousel">
       <ng-container *ngFor="let item of items" class="carousel__item">
         <p>-</p>
         <div *tuiItem class="item">
-          <h2 class="title">{{ item }}</h2>
+          <h2 tuiTitle="m" class="item__title">{{ item }}</h2>
           <!-- TODO: update documentation here -->
         </div>
       </ng-container>

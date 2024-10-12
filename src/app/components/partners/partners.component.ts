@@ -2,10 +2,11 @@ import { CommonModule, NgFor, isPlatformBrowser } from '@angular/common';
 import { Component, PLATFORM_ID, inject } from '@angular/core';
 import { specialnosti } from '../../data/specialnosti';
 import { TuiCarousel, TuiPagination } from '@taiga-ui/kit';
-import { TuiButton } from '@taiga-ui/core';
+import { TuiButton, TuiSurface } from '@taiga-ui/core';
 import { PartnersService } from '../../services/partners.service';
 import { IPartners } from '../../../types/partners';
 import { PreloaderComponent } from '../preloader/preloader.component';
+import { TuiCardLarge } from '@taiga-ui/layout';
 @Component({
   selector: 'app-partners',
   standalone: true,
@@ -16,6 +17,8 @@ import { PreloaderComponent } from '../preloader/preloader.component';
     TuiButton,
     CommonModule,
     PreloaderComponent,
+    TuiCardLarge,
+    TuiSurface,
   ],
   templateUrl: './partners.component.html',
   styleUrl: './partners.component.scss',

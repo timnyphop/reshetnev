@@ -1,17 +1,21 @@
 import { isPlatformBrowser, NgFor } from '@angular/common';
-import {
-  ChangeDetectionStrategy,
-  Component,
-  inject,
-  PLATFORM_ID,
-} from '@angular/core';
-import { TuiButton } from '@taiga-ui/core';
+import { Component, inject, PLATFORM_ID } from '@angular/core';
+import { TuiButton, TuiSurface, TuiTitle } from '@taiga-ui/core';
 import { TuiCarousel, TuiPagination } from '@taiga-ui/kit';
+import { TuiCardLarge } from '@taiga-ui/layout';
 
 @Component({
   selector: 'app-about-us',
   standalone: true,
-  imports: [NgFor, TuiCarousel, TuiPagination, TuiButton],
+  imports: [
+    NgFor,
+    TuiCarousel,
+    TuiPagination,
+    TuiButton,
+    TuiCardLarge,
+    TuiSurface,
+    TuiTitle,
+  ],
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.scss',
 })
