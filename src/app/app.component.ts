@@ -24,18 +24,15 @@ import { IonApp, IonContent } from '@ionic/angular/standalone';
     ContainerComponent,
     ContainerComponent,
     TuiRoot,
+<<<<<<< HEAD
     IonApp,
     IonContent,
+=======
+    IonContent,
+    IonApp,
+>>>>>>> 5564dde0 (lonic rebag)
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit {
-  bebrai = '';
-
-  constructor(private userInfo: UserInfoService) {}
-
-  ngOnInit() {
-    this.userInfo.userName$.subscribe((name) => (this.bebrai = name));
-  }
-}
+export class AppComponent {}

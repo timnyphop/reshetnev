@@ -1,0 +1,84 @@
+.balaklavrat {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 0;
+}
+.balaklavrat__title {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+.balaklavrat__block-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.balaklavrat__card {
+  width: calc(100% / 3 - 20px);
+  max-width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &::before {
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
+.balaklavrat__card1 {
+  background: url('https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-on-computer_23-2150010125.jpg?w=1480&t=st=1728143921~exp=1728144521~hmac=51925bf4c5bb003d74df34e6e06cfa7f18daac3f29fdc986a536eac8f747baee')
+    no-repeat center / cover;
+}
+.balaklavrat__card2 {
+  background: url('https://img.freepik.com/free-photo/production-electronic-components-high-tech-factory_1385-3207.jpg?t=st=1728135415~exp=1728139015~hmac=eab99c7fa570669c69be091b9146c0a53ad0f58bf0dd9c4ddfc5a4e973fcd622&w=1480')
+    no-repeat center / cover;
+}
+.balaklavrat__card3 {
+  background: url('https://img.freepik.com/free-vector/steel-production-illustration_1284-32648.jpg?t=st=1728136372~exp=1728139972~hmac=0f8d0eb015441f666dbf97b4ae13ea58ca837725fc37bc671e4aa6fe46ebf9e2&w=1380')
+    no-repeat center / cover;
+}
+.balaklavrat__card4 {
+  background: url('https://img.freepik.com/free-vector/realistic-power-plant-illustration_23-2149146673.jpg?t=st=1728276842~exp=1728280442~hmac=1c1b1a539a0016cde79106792f4cd3b3aef1d83173d35b711dceb55a1b4b12d8&w=996')
+    no-repeat center / cover;
+}
+.card__arrow {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.balakvariat__card-nav {
+  background-color: var(--primary);
+}
+.balakvariat__card-nav-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 760px) {
+  .balaklavrat__block-card {
+    flex-direction: column;
+  }
+  .balaklavrat__card {
+    width: 100%;
+  }
+  .balaklavrat__card2 {
+    width: 100%;
+  }
+  .balaklavrat__card3 {
+    width: 100%;
+  }
+  .balaklavrat__card4 {
+    width: 100%;
+  }
+}

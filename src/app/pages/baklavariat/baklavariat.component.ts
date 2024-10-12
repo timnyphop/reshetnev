@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
+import { TuiIcon, TuiSurface, TuiTitle } from '@taiga-ui/core';
+import { TuiCardLarge, TuiHeader } from '@taiga-ui/layout';
 
 @Component({
   selector: 'app-baklavariat',
   standalone: true,
-  imports: [],
+  imports: [TuiCardLarge, TuiTitle, TuiSurface, TuiHeader, TuiIcon],
   templateUrl: './baklavariat.component.html',
-  styleUrl: './baklavariat.component.scss'
+  styleUrl: './baklavariat.component.scss',
 })
-export class BaklavariatComponent {
-
-}
+export class BaklavariatComponent {}

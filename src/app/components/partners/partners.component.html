@@ -1,5 +1,5 @@
 <!--desktop-->
-<div class="partner__block">
+<div class="partner__block" tuiCardLarge tuiSurface="elevated">
   <h1 class="under-title">Наши партнеры</h1>
   <app-preloader *ngIf="loading" class="preloader"></app-preloader>
   <div *ngIf="!loading">
@@ -7,13 +7,12 @@
       <div class="partner-card" *ngFor="let item of items">
         <img src="{{ item.imgurl }}" class="partner-card__img" />
         <h1 class="partner-card__title">{{ item.name }}</h1>
-        <p class="partner-card__description">{{ item.description }}</p>
       </div>
     </div>
   </div>
 </div>
 <!--mobile-->
-<div class="partner__block-mobile">
+<div class="partner__block-mobile" tuiCardLarge tuiSurface="elevated">
   <h1 class="under-title">Наши партнеры</h1>
   <div class="carousel">
     <app-preloader *ngIf="loading" class="preloader"></app-preloader>
@@ -23,12 +22,12 @@
       [(index)]="index"
       class="carousel"
       *ngIf="!loading"
+      tuiSurface="elevated"
     >
       <ng-container *ngFor="let item of items">
         <div class="carousel__block-mobile" *tuiItem>
           <img src="{{ item.imgurl }}" class="partner-card__img" />
           <h1 class="partner-card__title">{{ item.name }}</h1>
-          <h2 class="partners-card__description">{{ item.description }}</h2>
         </div>
       </ng-container>
     </tui-carousel>

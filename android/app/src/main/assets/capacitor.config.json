@@ -1,0 +1,9 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "secondAngular",
+	"webDir": "dist/second-angular/browser",
+	"bundledWebRuntime": false,
+	"server": {
+		"url": "http://localhost:8100"
+	}
+}

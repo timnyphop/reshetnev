@@ -16,7 +16,7 @@
   <div class="left__block">
     <a href="/auth">
       <button tuiButton type="button" class="button">
-        <a> Личный кабинет</a>
+        <a class="header__button-text"> Личный кабинет</a>
       </button>
     </a>
 
@@ -38,11 +38,17 @@
             >Инструкция к личному кабинету</a
           >
 
-          <a class="header__button-link" href="#">Контакты</a>
-          <a class="header__button-link" href="#">Сроки подачи документов</a>
-          <a class="header__button-link" href="#">Общежития</a>
-          <a class="header__button-link" href="#">Иностранным гражданам</a>
-          <a class="header__button-link" href="#">Консултационный центр</a>
+          <a class="header__button-link" href="/contact">Контакты</a>
+          <a class="header__button-link" href="/deadline"
+            >Сроки подачи документов</a
+          >
+          <a class="header__button-link" href="/hostel">Общежития</a>
+          <a class="header__button-link" href="/foreignpeople"
+            >Иностранным гражданам</a
+          >
+          <a class="header__button-link" href="/consultation"
+            >Консултационный центр</a
+          >
         </div>
       </ng-template>
     </button>
@@ -60,16 +66,20 @@
       Поступающему
       <ng-template #dropdownContent2>
         <div class="dropdown">
-          <a href="#" class="header__button-link">Балаквариат и специалитет</a>
-          <a href="#" class="header__button-link">Магистратура</a>
+          <a href="/balakvariat" class="header__button-link"
+            >Балаквариат и специалитет</a
+          >
+          <a href="/magistratura" class="header__button-link">Магистратура</a>
           <a href="/college" class="header__button-link">Колледж</a>
-          <a href="#" class="header__button-link">Аспирантура</a>
-          <a href="#" class="header__button-link">Списки подавших заявлений </a>
+          <a href="/aspirantura" class="header__button-link">Аспирантура</a>
+          <a href="/" class="header__button-link">Списки подавших заявлений </a>
           <a href="/raiting" class="header__button-link"
             >Рейтинговые списки поступающих</a
           >
-          <a href="#" class="header__button-link">Приказы о зачислении</a>
-          <a href="#" class="header__button-link"
+          <a href="/zachisleniye" class="header__button-link"
+            >Приказы о зачислении</a
+          >
+          <a href="/instruction" class="header__button-link"
             >Инструкция к личному кабинету</a
           >
         </div>
@@ -98,23 +108,33 @@
               <a href="/auth" rel="noreferrer" target="_blank" class="link">
                 Личный кабинет
               </a>
-              <a href="#" rel="noreferrer" target="_blank" class="link">
+              <a href="/contact" rel="noreferrer" target="_blank" class="link">
                 Контакты
               </a>
 
-              <a href="#" rel="noreferrer" target="_blank" class="link">
+              <a href="/hostel" rel="noreferrer" target="_blank" class="link">
                 Общежития
               </a>
-              <a href="#" rel="noreferrer" target="_blank" class="link">
+              <a href="/deadline" rel="noreferrer" target="_blank" class="link">
                 Сроки подачи документов
               </a>
-              <a href="#" rel="noreferrer" target="_blank" class="link">
+              <a
+                href="/consultation"
+                rel="noreferrer"
+                target="_blank"
+                class="link"
+              >
                 Консультационный центр
               </a>
-              <a href="#" rel="noreferrer" target="_blank" class="link">
+              <a href="" rel="noreferrer" target="_blank" class="link">
                 Прием Граждан с ОВЗ
               </a>
-              <a href="#" rel="noreferrer" target="_blank" class="link">
+              <a
+                href="/foreignpeople"
+                rel="noreferrer"
+                target="_blank"
+                class="link"
+              >
                 Иностранным гражданам
               </a>
             </div>
@@ -125,25 +145,45 @@
           Поступающему
           <ng-template tuiAccordionItemContent>
             <div class="dropdown-modal__block">
-              <a href="#" rel="noreferrer" target="_blank" class="link">
+              <a
+                href="/balakvariat"
+                rel="noreferrer"
+                target="_blank"
+                class="link"
+              >
                 Балаквариат и специалитет
               </a>
-              <a href="#" rel="noreferrer" target="_blank" class="link">
+              <a
+                href="/magistratura"
+                rel="noreferrer"
+                target="_blank"
+                class="link"
+              >
                 Магистратура
               </a>
               <a href="/college" rel="noreferrer" target="_blank" class="link">
                 Колледж
               </a>
-              <a href="#" rel="noreferrer" target="_blank" class="link">
+              <a
+                href="/aspirantura"
+                rel="noreferrer"
+                target="_blank"
+                class="link"
+              >
                 Аспирантура
               </a>
-              <a href="#" rel="noreferrer" target="_blank" class="link">
+              <a href="/" rel="noreferrer" target="_blank" class="link">
                 Списки подавших заявления
               </a>
               <a href="/raiting" rel="noreferrer" target="_blank" class="link">
                 Рейтинговые списки
               </a>
-              <a href="#" rel="noreferrer" target="_blank" class="link">
+              <a
+                href="/zachisleniye"
+                rel="noreferrer"
+                target="_blank"
+                class="link"
+              >
                 Приказы о зачислении
               </a>
               <a
@@ -183,7 +223,6 @@
             </div>
           </ng-template>
         </tui-accordion-item>
-        <div class="dropwont-close__block"></div>
       </tui-accordion>
     </div>
   </tui-icon>
