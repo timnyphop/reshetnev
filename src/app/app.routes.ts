@@ -1,8 +1,4 @@
 import { Routes } from '@angular/router';
-import HomeComponent from './pages/home/home.component';
-import { AuthComponent } from './pages/auth/auth.component';
-import { RaitingComponent } from './pages/raiting/raiting.component';
-import { CollegeComponent } from './pages/college/college.component';
 import { MagistraturaComponent } from './pages/magistratura/magistratura.component';
 import { AspiranturaComponent } from './pages/aspirantura/aspirantura.component';
 import { ZachisleniyeComponent } from './pages/zachisleniye/zachisleniye.component';
@@ -24,13 +20,6 @@ export const routes: Routes = [
         path: '',
         loadComponent: () =>
           import('./pages/home/home.component').then((m) => m.default),
-      },
-      {
-        path: 'raiting',
-        loadComponent: () =>
-          import('./pages/raiting/raiting.component').then(
-            (m) => m.RaitingComponent,
-          ),
       },
     ],
   },
